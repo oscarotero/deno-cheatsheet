@@ -1,0 +1,125 @@
+- title: Testing
+  manual: https://deno.land/manual/testing
+  cli: deno test [paths...]
+  stable: true
+  api: Deno.test
+  config: |
+    ### Cli options:
+
+    - To stop on the first failure: `--fail-fast`.
+    - To filter the test you are running: `--filter "string or /pattern/`
+
+- title: Formatter
+  manual: https://deno.land/manual/tools/formatter
+  cli: deno fmt [files...]
+  stable: true
+  config: |
+    ### Directives
+
+    - Ignore an entire file:
+      - JavaScript: `// deno-fmt-ignore-file`
+      - Markdown: `<!-- deno-fmt-ignore-file -->`
+
+    - Ignore the preceding code:
+      - JavaScript: `// deno-fmt-ignore`
+      - Markdown: `<!-- deno-fmt-ignore -->`
+
+    - Ignore a markdown section:
+      - Start: `<!-- deno-fmt-ignore-start -->`
+      - End: `<!-- deno-fmt-ignore-end -->`
+
+    ### Configuration
+
+    - Whether to use tabs
+      - CLI: `--options-use-tabs`
+      - deno.json: `fmt.options.useTabs`
+      - default: `false` (use spaces)
+    - The width of a line the printer will try to stay under. Note that the printer may exceed this width in certain cases.
+      - CLI: `--options-line-width`
+      - deno.json: `fmt.options.lineWidth`
+      - default: 80
+    - The number of characters for an indent.
+      - CLI: `--options-indent-width`
+      - deno.json: `fmt.options.indentWidth`
+      - default: 2
+    - Whether to use single quote.
+      - CLI: `--options-single-quote`
+      - deno.json: `fmt.options.singleQuote`
+      - default: `false` (using double quote)
+    - Define how prose should be wrapped in Markdown files.
+      - CLI: `--options-prose-wrap={always,never,preserve}`
+      - deno.json: `fmt.options.proseWrap`
+      - default: always
+
+- title: Bundler
+  manual: https://deno.land/manual/tools/bundler
+  cli: deno bundle <source> [output]
+  api: Deno.emit
+
+- title: Linter
+  manual: https://deno.land/manual/tools/linter
+  cli: deno lint [files...]
+  stable: true
+  rules: https://lint.deno.land/
+  config: |
+    ### JavaScript directives
+
+    - Ignore a entire file: `// deno-lint-ignore-file`
+    - Ignore a specific diagnostics in a entire file: `// deno-lint-ignore-file <codes...>`
+    - Ignore certain diagnostics: `// deno-lint-ignore <codes...>`
+
+    ### Configuration
+
+    [List of rules](https://lint.deno.land/){target="_blank"}
+
+    - List of tag names that will be run. Empty list disables all tags and will only use rules from include.
+      - CLI: `--rules-tags`
+      - deno.json: `lint.rules.tags`
+      - default: `["recommended"]`
+    - title: List of rule names that will be excluded from configured tag sets. If the same rule is in include it will be run.
+      - CLI: `--rules-exclude`
+      - deno.json: `lint.rules.exclude`
+      - default: `[]`
+    - title: List of rule names that will be run. Even if the same rule is in exclude it will be run.
+      - CLI: `--rules-include`
+      - deno.json: `lint.rules.include`
+      - default: `[]`
+
+- title: Tasks
+  manual: https://deno.land/manual/tools/task_runner
+  cli: deno task <task> [args...]
+  config: |
+    ### Supported syntax
+    
+    - Sequential list (if success):
+      `command1 && command2`
+    - Sequential list (if not success)
+      `command1 || command2`
+    - Sequential list (regardless of previous command is success or not):
+      `command1 ; command2`
+    - Async commands:
+      `command1 & command2`
+    - Negate exit code (from 1 to 0):
+      `! command1`
+    - Copy files:
+      `cp`
+    - Move files:
+      `mv`
+    - Remove files or directories:
+      `rm -rf`
+    - Make directories:
+      `mkdir`
+    - Print the current directory:
+      `pwd`
+    - Delays for a specific amount of time:
+      `sleep`
+    - Display a line of text:
+      `echo`
+    - Causes the shell to exit:
+      `exit`
+
+- title: Benchmarking
+  manual: https://deno.land/manual/tools/benchmarker
+  cli: deno bench [files...]
+  api: Deno.bench
+  

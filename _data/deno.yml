@@ -1,0 +1,412 @@
+- title: Errors
+  content: 
+    - name: Deno.errors.AddrInUse
+      stable: true
+      type: class
+    - name: Deno.errors.AddrNotAvailable
+      stable: true
+      type: class
+    - name: Deno.errors.AlreadyExists
+      stable: true
+      type: class
+    - name: Deno.errors.BadResource
+      stable: true
+      type: class
+    - name: Deno.errors.BrokenPipe
+      stable: true
+      type: class
+    - name: Deno.errors.Busy
+      stable: true
+      type: class
+    - name: Deno.errors.ConnectionAborted
+      stable: true
+      type: class
+    - name: Deno.errors.ConnectionRefused
+      stable: true
+      type: class
+    - name: Deno.errors.ConnectionReset
+      stable: true
+      type: class
+    - name: Deno.errors.Http
+      stable: true
+      type: class
+    - name: Deno.errors.Interrupted
+      stable: true
+      type: class
+    - name: Deno.errors.InvalidData
+      stable: true
+      type: class
+    - name: Deno.errors.NotConnected
+      stable: true
+      type: class
+    - name: Deno.errors.NotFound
+      stable: true
+      type: class
+    - name: Deno.errors.NotSupported
+      stable: true
+      type: class
+    - name: Deno.errors.PermissionDenied
+      stable: true
+      type: class
+    - name: Deno.errors.TimedOut
+      stable: true
+      type: class
+    - name: Deno.errors.UnexpectedEof
+      stable: true
+      type: class
+    - name: Deno.errors.WriteZero
+      stable: true
+      type: class
+
+- title: File System
+  content:
+    - name: Deno.FsFile
+      stable: true
+      type: class
+    - name: Deno.copyFile
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.create
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.makeTempDir
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.makeTempFile
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.mkdir
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.readDir
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.readFile
+      stable: true
+      sync: true
+    - name: Deno.readLink
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.readTextFile
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.writeFile
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.writeTextFile
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.truncate
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.chmod
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.chown
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.rename
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.stat
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.symlink
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.realPath
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.remove
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.lstat
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.isatty
+      stable: true
+      type: function
+    - name: Deno.link
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.setRaw
+      stable: false
+      type: function
+    - name: Deno.utime
+      stable: false
+      sync: true
+      type: function
+
+- title: Runtime utils
+  content:
+    - name: Deno.permissions
+      stable: true
+      type: variable
+      contains:
+        name: Deno.Permissions
+
+    - name: Deno.PermissionStatus
+      stable: true
+      type: class
+    - name: Deno.args
+      stable: true
+      type: variable
+    - name: Deno.build
+      stable: true
+      type: variable
+    - name: Deno.env
+      stable: true
+      type: variable
+    - name: Deno.mainModule
+      stable: true
+      type: variable
+    - name: Deno.noColor
+      stable: true
+      type: variable
+    - name: Deno.pid
+      stable: true
+      type: variable
+    - name: Deno.ppid
+      stable: true
+      type: variable
+    - name: Deno.stderr
+      stable: true
+      type: variable
+    - name: Deno.stdin
+      stable: true
+      type: variable
+    - name: Deno.stdout
+      stable: true
+      type: variable
+    - name: Deno.version
+      stable: true
+      type: variable
+    - name: Deno.cwd
+      stable: true
+      type: function
+    - name: Deno.chdir
+      stable: true
+      type: function
+    - name: Deno.memoryUsage
+      stable: true
+      type: variable
+    - name: Deno.metrics
+      stable: true
+      type: function
+    - name: Deno.addSignalListener
+      stable: true
+      type: function
+    - name: Deno.removeSignalListener
+      stable: true
+      type: function
+    - name: Deno.exit
+      stable: true
+      type: function
+    - name: Deno.execPath
+      stable: true
+      type: function
+    - name: Deno.kill
+      stable: true
+      type: function
+    - name: Deno.Process
+      stable: true
+      type: class
+    - name: Deno.run
+      stable: true
+      type: function
+    - name: Deno.inspect
+      stable: true
+      type: function
+    - name: Deno.DiagnosticCategory
+      stable: false
+      type: type
+    - name: Deno.consoleSize
+      stable: false
+      type: function
+    - name: Deno.getUid
+      stable: false
+      type: function
+    - name: Deno.hostname
+      stable: false
+      type: function
+    - name: Deno.loadavg
+      stable: false
+      type: function
+    - name: Deno.osRelease
+      stable: false
+      type: function
+    - name: Deno.refTimer
+      stable: false
+      type: function
+    - name: Deno.unrefTimer
+      stable: false
+      type: function
+    - name: Deno.sleepSync
+      stable: false
+      type: function
+    - name: Deno.systemMemoryInfo
+      stable: false
+      type: function
+    - name: Deno.umask
+      stable: false
+      type: function
+
+- title: Network
+  content:
+    - name: Deno.connect
+      stable: true
+      type: function
+    - name: Deno.HttpClient
+      stable: false
+      type: class
+    - name: Deno.connectTls
+      stable: true
+      type: function
+    - name: Deno.listen
+      stable: true
+      type: function
+    - name: Deno.listenTls
+      stable: true
+      type: function
+    - name: Deno.resolveDns
+      stable: true
+      type: function
+    - name: Deno.serveHttp
+      stable: true
+      type: function
+    - name: Deno.startTls
+      stable: true
+      type: function
+    - name: Deno.upgradeWebSocket
+      stable: true
+      type: function
+    - name: Deno.shutdown
+      stable: true
+      type: function
+    - name: Deno.connect
+      stable: false
+      type: function
+    - name: Deno.connectTls
+      stable: false
+      type: function
+    - name: Deno.createHttpClient
+      stable: false
+      type: function
+    - name: Deno.listen
+      stable: false
+      type: function
+    - name: Deno.listenDatagram
+      stable: false
+      type: function
+    - name: Deno.networkInterfaces
+      stable: false
+      type: function
+    - name: Deno.upgradeHttp
+      stable: false
+      type: function
+
+- title: Resources
+  content:
+    - name: Deno.resources
+      stable: true
+      type: function
+    - name: Deno.close
+      stable: true
+      type: function
+    - name: Deno.open
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.read
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.write
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.seek
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.ftruncate
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.fdatasync
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.fstat
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.fsync
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.flock
+      stable: false
+      sync: true
+      type: function
+    - name: Deno.funlock
+      stable: false
+      sync: true
+      type: function
+    - name: Deno.futime
+      stable: false
+      sync: true
+      type: function
+
+- title: Tools
+  content:
+    - name: Deno.test
+      stable: true
+      type: function
+    - name: Deno.applySourceMap
+      stable: false
+      type: function
+    - name: Deno.bench
+      stable: false
+      type: function
+    - name: Deno.emit
+      stable: false
+      type: function
+    - name: Deno.formatDiagnostics
+      stable: false
+      type: function
+
+- title: FFI (Foreign Function Interface)
+  content:
+    - name: Deno.UnsafeFnPointer
+      stable: false
+      type: class
+    - name: Deno.UnsafePointer
+      stable: false
+      type: class
+    - name: Deno.UnsafePointerView
+      stable: false
+      type: class
+    - name: Deno.dlopen
+      stable: false
+      type: function

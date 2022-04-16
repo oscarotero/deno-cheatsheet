@@ -1,0 +1,535 @@
+- title: Window
+  content:
+    - name: window
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/window
+      contains: 
+        name: Window
+        mdn: /Web/API/Window
+
+    - name: self
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/self
+    
+    - name: location
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/Location
+      contains:
+        name: Location
+        mdn: /Web/API/Location
+
+    - name: navigator
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/navigator
+      contains:
+        name: Navigator
+        mdn: /Web/API/Navigator
+
+    - name: alert
+      stable: true
+      type: function
+      mdn: /Web/API/Window/alert
+    - name: confirm
+      stable: true
+      type: function
+      mdn: /Web/API/Window/confirm
+    - name: prompt
+      stable: true
+      type: function
+      mdn: /Web/API/Window/prompt
+    - name: console
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/console
+      contains:
+        name: Console
+        mdn: /Web/API/console
+
+- title: Async
+  content:
+    - name: clearInterval
+      stable: true
+      type: function
+      mdn: /Web/API/clearInterval
+    - name: clearTimeout
+      stable: true
+      type: function
+      mdn: /Web/API/clearTimeout
+    - name: queueMicrotask
+      stable: true
+      type: function
+      mdn: /Web/API/queueMicrotask
+    - name: setInterval
+      stable: true
+      type: function
+      mdn: /Web/API/setInterval
+    - name: setTimeout
+      stable: true
+      type: function
+      mdn: /Web/API/setTimeout
+
+- title: Fetch & URLs
+  content:
+    - name: fetch
+      stable: true
+      type: function
+      mdn: /Web/API/fetch
+    - name: Headers
+      stable: true
+      type: class
+      mdn: /Web/API/Headers
+    - name: Request
+      stable: true
+      type: class
+      mdn: /Web/API/Request
+    - name: Response
+      stable: true
+      type: class
+      mdn: /Web/API/Response
+    - name: URL
+      stable: true
+      type: class
+      mdn: /Web/API/URL
+    - name: URLSearchParams
+      stable: true
+      type: class
+      mdn: /Web/API/URLSearchParams
+    - name: URLPattern
+      stable: true
+      type: class
+      mdn: /Web/API/URLPattern
+    - name: FormData
+      stable: true
+      type: class
+      mdn: /Web/API/FormData
+
+- title: Websocket
+  content:
+    - name: WebSocket
+      stable: true
+      type: class
+      mdn: /Web/API/WebSocket
+    - name: WebSocketStream
+      stable: false
+      type: class
+
+- title: Web Workers
+  content:
+    - name: Worker
+      stable: true
+      type: class
+      mdn: /Web/API/Worker
+
+- title: Message
+  content:
+    - name: MessagePort
+      stable: true
+      type: class
+      mdn: /Web/API/MessagePort
+    - name: MessageChannel
+      stable: true
+      type: class
+      mdn: /Web/API/MessageChannel
+
+- title: Performance
+  content:
+    - name: PerformanceMeasure
+      stable: true
+      type: class
+      mdn: /Web/API/PerformanceMeasure
+    - name: PerformanceMark
+      stable: true
+      type: class
+      mdn: /Web/API/PerformanceMark
+    - name: PerformanceEntry
+      stable: true
+      type: class
+      mdn: /Web/API/PerformanceEntry
+    - name: performance
+      stable: true
+      type: variable
+      mdn: /Web/API/performance_property
+      contains:
+        name: Performance
+        mdn: /Web/API/Performance
+
+- title: Storage
+  content:
+    - name: localStorage
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/localStorage
+      contains:
+        name: Storage
+        mdn: /Web/API/Storage
+    - name: sessionStorage
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/sessionStorage
+      contains:
+        name: Storage
+        mdn: /Web/API/Storage
+
+- title: File
+  content:
+    - name: File
+      stable: true
+      type: class
+      mdn: /Web/API/File
+    - name: Blob
+      stable: true
+      type: class
+      mdn: /Web/API/Blob
+    - name: FileReader
+      stable: true
+      type: class
+      mdn: /Web/API/FileReader
+
+- title: TextEncoder
+  content:
+    - name: TextDecoder
+      stable: true
+      type: class
+      mdn: /Web/API/TextDecoder
+    - name: TextDecoderStream
+      stable: true
+      type: class
+      mdn: /Web/API/TextDecoderStream
+    - name: TextEncoder
+      stable: true
+      type: class
+      mdn: /Web/API/TextEncoder
+    - name: TextEncoderStream
+      stable: true
+      type: class
+      mdn: /Web/API/TextEncoderStream
+
+- title: Streams
+  content:
+    - name: ReadableByteStreamController
+      stable: true
+      type: class
+      mdn: /Web/API/ReadableByteStreamController
+    - name: ReadableStream
+      stable: true
+      type: class
+      mdn: /Web/API/ReadableStream
+    - name: ReadableStreamDefaultController
+      stable: true
+      type: class
+      mdn: /Web/API/ReadableStreamDefaultController
+    - name: ReadableStreamDefaultReader
+      stable: true
+      type: class
+      mdn: /Web/API/ReadableStreamDefaultReader
+    - name: ReadableStreamReader
+      stable: true
+      type: type
+    - name: TransformStream
+      stable: true
+      type: class
+      mdn: /Web/API/TransformStream
+    - name: TransformStreamDefaultController
+      stable: true
+      type: class
+      mdn: /Web/API/TransformStreamDefaultController
+    - name: WritableStream
+      stable: true
+      type: class
+      mdn: /Web/API/WritableStream
+    - name: WritableStreamDefaultController
+      stable: true
+      type: class
+      mdn: /Web/API/WritableStreamDefaultController
+    - name: WritableStreamDefaultWriter
+      stable: true
+      type: class
+      mdn: /Web/API/WritableStreamDefaultWriter
+    - name: CountQueuingStrategy
+      stable: true
+      type: class
+      mdn: /Web/API/CountQueuingStrategy
+    - name: ByteLengthQueuingStrategy
+      stable: true
+      type: class
+      mdn: /Web/API/ByteLengthQueuingStrategy
+
+- title: Compression Streams
+  content:
+    - name: DecompressionStream
+      stable: true
+      type: class
+      mdn: /Web/API/DecompressionStream
+    - name: CompressionStream
+      stable: true
+      type: class
+      mdn: /Web/API/CompressionStream
+
+
+- title: Events
+  content:
+    - name: ProgressEvent
+      stable: true
+      type: class
+      mdn: /Web/API/ProgressEvent
+    - name: EventTarget
+      stable: true
+      type: class
+      mdn: /Web/API/EventTarget
+    - name: Event
+      stable: true
+      type: class
+      mdn: /Web/API/Event
+    - name: MessageEvent
+      stable: true
+      type: class
+      mdn: /Web/API/MessageEvent
+    - name: ErrorEvent
+      stable: true
+      type: class
+      mdn: /Web/API/ErrorEvent
+    - name: onload
+      stable: true
+      type: variable
+      mdn: /Web/API/GlobalEventHandlers/onload
+    - name: onunload
+      stable: true
+      type: variable
+      mdn: /Web/API/WindowEventHandlers/onunload
+    - name: addEventListener
+      stable: true
+      type: function
+      mdn: /Web/API/EventTarget/addEventListener
+    - name: dispatchEvent
+      stable: true
+      type: function
+      mdn: /Web/API/EventTarget/dispatchEvent
+    - name: removeEventListener
+      stable: true
+      type: function
+      mdn: /Web/API/EventTarget/removeEventListener
+    - name: CustomEvent
+      stable: true
+      type: class
+      mdn: /Web/API/CustomEvent/CustomEvent
+    - name: CloseEvent
+      stable: true
+      type: class
+      mdn: /Web/API/CloseEvent
+    - name: DOMException
+      stable: true
+      type: class
+      mdn: /Web/API/DOMException
+
+- title: AbortController
+  content:
+    - name: AbortController
+      stable: true
+      type: class
+      mdn: /Web/API/AbortController
+    - name: AbortSignal
+      stable: true
+      type: class
+      mdn: /Web/API/AbortSignal
+
+- title: CryptoKey
+  content:
+    - name: crypto
+      stable: true
+      type: variable
+      mdn: /Web/API/crypto_property
+      contains:
+        name: Crypto
+        mdn: /Web/API/Crypto
+    - name: CryptoKey
+      stable: true
+      type: class
+      mdn: /Web/API/CryptoKey
+    - name: CryptoKeyPair
+      stable: true
+      type: class
+      mdn: /Web/API/CryptoKeyPair
+    - name: SubtleCrypto
+      stable: true
+      type: class
+      mdn: /Web/API/SubtleCrypto
+
+- title: Binary to ASCII
+  content:
+    - name: btoa
+      stable: true
+      type: function
+      mdn: /Web/API/btoa
+    - name: atob
+      stable: true
+      type: function
+      mdn: /Web/API/atob
+
+- title: BroadcastChannel
+  content:
+    - name: BroadcastChannel
+      stable: true
+      type: class
+      mdn: /Web/API/BroadcastChannel
+
+- title: structuredClone
+  content:
+    - name: structuredClone
+      stable: true
+      type: function
+      mdn: /Web/API/structuredClone
+
+- title: WebAssembly
+  content:
+    - name: WebAssembly.CompileError
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError
+    - name: WebAssembly.Global
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/Global
+    - name: WebAssembly.Instance
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance
+    - name: WebAssembly.LinkError
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError
+    - name: WebAssembly.Memory
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory
+    - name: WebAssembly.Module
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/Module
+    - name: WebAssembly.RuntimeError
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError
+    - name: WebAssembly.Table
+      type: class
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/Table
+    - name: WebAssembly.compile
+      type: function
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/compile
+    - name: WebAssembly.compileStreaming
+      type: function
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/compileStreaming
+    - name: WebAssembly.instantiate
+      type: function
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate
+    - name: WebAssembly.instantiateStreaming
+      type: function
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiateStreaming
+    - name: WebAssembly.validate
+      type: function
+      stable: true
+      mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/validate
+
+- title: WebGPU
+  content:
+    - name: GPU
+      stable: true
+      type: class
+    - name: GPUAdapter
+      stable: true
+      type: class
+    - name: GPUBindGroup
+      stable: true
+      type: class
+    - name: GPUBindGroupLayout
+      stable: true
+      type: class
+    - name: GPUBuffer
+      stable: true
+      type: class
+    - name: GPUBufferUsage
+      stable: true
+      type: class
+    - name: GPUColorWrite
+      stable: true
+      type: class
+    - name: GPUCommandBuffer
+      stable: true
+      type: class
+    - name: GPUCommandEncoder
+      stable: true
+      type: class
+    - name: GPUComputePassEncoder
+      stable: true
+      type: class
+    - name: GPUComputePipeline
+      stable: true
+      type: class
+    - name: GPUDevice
+      stable: true
+      type: class
+    - name: GPUMapMode
+      stable: true
+      type: class
+    - name: GPUOutOfMemoryError
+      stable: true
+      type: class
+    - name: GPUPipelineLayout
+      stable: true
+      type: class
+    - name: GPUQuerySet
+      stable: true
+      type: class
+    - name: GPUQueue
+      stable: true
+      type: class
+    - name: GPURenderBundle
+      stable: true
+      type: class
+    - name: GPURenderBundleEncoder
+      stable: true
+      type: class
+    - name: GPURenderPassEncoder
+      stable: true
+      type: class
+    - name: GPURenderPipeline
+      stable: true
+      type: class
+    - name: GPUSampler
+      stable: true
+      type: class
+    - name: GPUShaderModule
+      stable: true
+      type: class
+    - name: GPUShaderStage
+      stable: true
+      type: class
+    - name: GPUSupportedFeatures
+      stable: true
+      type: class
+    - name: GPUSupportedLimits
+      stable: true
+      type: class
+    - name: GPUTexture
+      stable: true
+      type: class
+    - name: GPUTextureUsage
+      stable: true
+      type: class
+    - name: GPUTextureView
+      stable: true
+      type: class
+    - name: GPUUncapturedErrorEvent
+      stable: true
+      type: class
+    - name: GPUValidationError
+      stable: true
+      type: class

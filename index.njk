@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deno Cheat Sheet</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <h1>Deno Cheat Sheet</h1>
+
+  <section class="deno section">
+    <header class="section-header">
+      <h2 class="section-title">Tools</h2>
+    </header>
+
+    <div class="section-tools">
+      {% for tool in tools %}
+      <section class="section-tool">
+        <h3 class="section-subtitle">
+          <a href="{{ tool.manual }}" data-modal>
+            {{ tool.title }}
+          </a>
+          {% if not tool.stable %}
+            &nbsp;
+            <span class="badge">unstable</span>
+          {% endif %}
+        </h3>
+        {{ comp.deno.tool(tool) | safe }}
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="deno section">
+    <header class="section-header">
+      <h2 class="section-title">Deno runtime API</h2>
+    </header>
+
+    <div class="section-content">
+      {% for section in deno %}
+      <section class="section-subsection">
+        <h3 class="section-subtitle">{{ section.title }}</h3>
+
+        <ul class="section-items">
+        {% for item in section.content %}
+          <li>
+            {{ comp.deno.api(item) | safe }}
+          </li>
+        {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="web section">
+    <header class="section-header">
+      <h2 class="section-title">Web APIs</h2>
+    </header>
+
+    <div class="section-content">
+      {% for section in web %}
+      <section class="section-subsection">
+        <h3 class="section-subtitle">{{ section.title }}</h3>
+
+        <ul class="section-items">
+        {% for item in section.content %}
+          <li>
+            {{ comp.deno.api(item) | safe }}
+          </li>
+        {% endfor %}
+        </ul>
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+
+  <x-modal></x-modal>
+</body>
+</html>

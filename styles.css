@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 5vw;
+  line-height: 1.5;
+}
+pre, code {
+  font-family: 'Source Code Pro', monospace;
+}
+pre {
+  margin: .5em 0;
+}
+code {
+  font-size: .85rem;
+  background: #efefef;
+  color: #666;
+  border: solid 1px #eee;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  
+  & a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+pre > code {
+  display: block;
+  overflow: auto;
+  padding: .5em 1em;
+}
+
+.section-header {
+  margin-bottom: 1em;
+}
+.section-title {
+  margin: 3em 0 2em 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.section-content {
+  column-width: 13em;
+  column-gap: 3em;
+  column-rule: 1px solid #dfdfdf;
+
+  & > * {
+    break-inside: avoid;
+  }
+}
+.section-subsection {
+  margin-bottom: 1em;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.section-subtitle {
+  font-size: 1rem;
+  margin: 0 0 .5em;
+
+  & a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.section-items {
+  font-size: .85rem;
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+
+  & p {
+    margin: 0;
+  }
+
+  & a {
+    display: inline-block;
+    padding: .3em .2em;
+    border-radius: .3em;
+    text-decoration: none;
+    color: #555;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.section-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+  background: #efefef;
+  padding: 1em;
+  border-radius: 16px;
+}
+.section-tool {
+  border: solid 1px #dcdcdc;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+}
+
+.badge {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .65rem;
+  background: #f1dbe0;
+  color: #772336;
+  padding: .1em .5em;
+  border-radius: 8px;
+  font-family: 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+}
+
+.config-dialog[open] {
+  width: min(800px, calc(100vw - 20px));
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 1em 1em .5em .5em;
+  border: none;
+
+  & nav {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    justify-content: end;
+    column-gap: 1em;
+    padding: .5em;
+  }
+  & button {
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+  & > div {
+    padding: 1em;
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+  }
+}
+
+.button {
+  background: #dcdcdc;
+  border: none;
+  padding: .5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .9rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    background: #bbb;
+  }
+}
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
