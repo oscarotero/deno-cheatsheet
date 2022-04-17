@@ -8,13 +8,12 @@
   <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-  <h1>Deno Cheat Sheet</h1>
+  <h1 class="main-title">
+    <img src="deno-logo.svg" width="50" height="50" alt="Deno Logo" class="logo">
+    <span>Deno cheat sheet</span>
+  </h1>
 
-  <section class="deno section">
-    <header class="section-header">
-      <h2 class="section-title">Tools</h2>
-    </header>
-
+  <section class="section">
     <div class="section-tools">
       {% for tool in tools %}
       <section class="section-tool">
@@ -33,7 +32,7 @@
     </div>
   </section>
 
-  <section class="deno section">
+  <section class="section">
     <header class="section-header">
       <h2 class="section-title">Deno runtime API</h2>
     </header>
@@ -55,7 +54,7 @@
     </div>
   </section>
 
-  <section class="web section">
+  <section class="section">
     <header class="section-header">
       <h2 class="section-title">Web APIs</h2>
     </header>
@@ -78,5 +77,9 @@
   </section>
 
   <x-modal></x-modal>
+
+  <footer class="main-footer">
+    <p>Created by <a href="https://twitter.com/misteroom/">Óscar Otero</a> - <a href="https://github.com/oscarotero/deno-cheatsheet">See the code</a></p>
+  </footer>
 </body>
 </html>

@@ -1,63 +1,3 @@
-- title: Errors
-  content: 
-    - name: Deno.errors.AddrInUse
-      stable: true
-      type: class
-    - name: Deno.errors.AddrNotAvailable
-      stable: true
-      type: class
-    - name: Deno.errors.AlreadyExists
-      stable: true
-      type: class
-    - name: Deno.errors.BadResource
-      stable: true
-      type: class
-    - name: Deno.errors.BrokenPipe
-      stable: true
-      type: class
-    - name: Deno.errors.Busy
-      stable: true
-      type: class
-    - name: Deno.errors.ConnectionAborted
-      stable: true
-      type: class
-    - name: Deno.errors.ConnectionRefused
-      stable: true
-      type: class
-    - name: Deno.errors.ConnectionReset
-      stable: true
-      type: class
-    - name: Deno.errors.Http
-      stable: true
-      type: class
-    - name: Deno.errors.Interrupted
-      stable: true
-      type: class
-    - name: Deno.errors.InvalidData
-      stable: true
-      type: class
-    - name: Deno.errors.NotConnected
-      stable: true
-      type: class
-    - name: Deno.errors.NotFound
-      stable: true
-      type: class
-    - name: Deno.errors.NotSupported
-      stable: true
-      type: class
-    - name: Deno.errors.PermissionDenied
-      stable: true
-      type: class
-    - name: Deno.errors.TimedOut
-      stable: true
-      type: class
-    - name: Deno.errors.UnexpectedEof
-      stable: true
-      type: class
-    - name: Deno.errors.WriteZero
-      stable: true
-      type: class
-
 - title: File System
   content:
     - name: Deno.FsFile
@@ -157,6 +97,152 @@
       sync: true
       type: function
 
+- title: Tools
+  content:
+    - name: Deno.test
+      stable: true
+      type: function
+    - name: Deno.applySourceMap
+      stable: false
+      type: function
+    - name: Deno.bench
+      stable: false
+      type: function
+    - name: Deno.emit
+      stable: false
+      type: function
+    - name: Deno.formatDiagnostics
+      stable: false
+      type: function
+
+- title: Resources
+  content:
+    - name: Deno.resources
+      stable: true
+      type: function
+    - name: Deno.close
+      stable: true
+      type: function
+    - name: Deno.open
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.read
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.write
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.seek
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.ftruncate
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.fdatasync
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.fstat
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.fsync
+      stable: true
+      sync: true
+      type: function
+    - name: Deno.flock
+      stable: false
+      sync: true
+      type: function
+    - name: Deno.funlock
+      stable: false
+      sync: true
+      type: function
+    - name: Deno.futime
+      stable: false
+      sync: true
+      type: function
+
+- title: FFI (Foreign Function Interface)
+  content:
+    - name: Deno.UnsafeFnPointer
+      stable: false
+      type: class
+    - name: Deno.UnsafePointer
+      stable: false
+      type: class
+    - name: Deno.UnsafePointerView
+      stable: false
+      type: class
+    - name: Deno.dlopen
+      stable: false
+      type: function
+
+- title: Errors
+  content: 
+    - name: Deno.errors.AddrInUse
+      stable: true
+      type: class
+    - name: Deno.errors.AddrNotAvailable
+      stable: true
+      type: class
+    - name: Deno.errors.AlreadyExists
+      stable: true
+      type: class
+    - name: Deno.errors.BadResource
+      stable: true
+      type: class
+    - name: Deno.errors.BrokenPipe
+      stable: true
+      type: class
+    - name: Deno.errors.Busy
+      stable: true
+      type: class
+    - name: Deno.errors.ConnectionAborted
+      stable: true
+      type: class
+    - name: Deno.errors.ConnectionRefused
+      stable: true
+      type: class
+    - name: Deno.errors.ConnectionReset
+      stable: true
+      type: class
+    - name: Deno.errors.Http
+      stable: true
+      type: class
+    - name: Deno.errors.Interrupted
+      stable: true
+      type: class
+    - name: Deno.errors.InvalidData
+      stable: true
+      type: class
+    - name: Deno.errors.NotConnected
+      stable: true
+      type: class
+    - name: Deno.errors.NotFound
+      stable: true
+      type: class
+    - name: Deno.errors.NotSupported
+      stable: true
+      type: class
+    - name: Deno.errors.PermissionDenied
+      stable: true
+      type: class
+    - name: Deno.errors.TimedOut
+      stable: true
+      type: class
+    - name: Deno.errors.UnexpectedEof
+      stable: true
+      type: class
+    - name: Deno.errors.WriteZero
+      stable: true
+      type: class
+
 - title: Runtime utils
   content:
     - name: Deno.permissions
@@ -209,7 +295,7 @@
       type: function
     - name: Deno.memoryUsage
       stable: true
-      type: variable
+      type: function
     - name: Deno.metrics
       stable: true
       type: function
@@ -322,91 +408,5 @@
       stable: false
       type: function
     - name: Deno.upgradeHttp
-      stable: false
-      type: function
-
-- title: Resources
-  content:
-    - name: Deno.resources
-      stable: true
-      type: function
-    - name: Deno.close
-      stable: true
-      type: function
-    - name: Deno.open
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.read
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.write
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.seek
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.ftruncate
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.fdatasync
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.fstat
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.fsync
-      stable: true
-      sync: true
-      type: function
-    - name: Deno.flock
-      stable: false
-      sync: true
-      type: function
-    - name: Deno.funlock
-      stable: false
-      sync: true
-      type: function
-    - name: Deno.futime
-      stable: false
-      sync: true
-      type: function
-
-- title: Tools
-  content:
-    - name: Deno.test
-      stable: true
-      type: function
-    - name: Deno.applySourceMap
-      stable: false
-      type: function
-    - name: Deno.bench
-      stable: false
-      type: function
-    - name: Deno.emit
-      stable: false
-      type: function
-    - name: Deno.formatDiagnostics
-      stable: false
-      type: function
-
-- title: FFI (Foreign Function Interface)
-  content:
-    - name: Deno.UnsafeFnPointer
-      stable: false
-      type: class
-    - name: Deno.UnsafePointer
-      stable: false
-      type: class
-    - name: Deno.UnsafePointerView
-      stable: false
-      type: class
-    - name: Deno.dlopen
       stable: false
       type: function

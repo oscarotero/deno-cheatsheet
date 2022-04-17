@@ -1,34 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root {
+  --font-ui: Inter, -apple-system, system-ui, sans-serif;
+  --font-code: monospace;
+  --color-bg: hsl(250deg, 20%, 95%);
+  --color-border: hsl(250deg, 20%, 86%);
+  --color-code: hsl(250deg, 20%, 40%);
+
+  --color-interact: hsl(250deg, 20%, 20%);
+  --color-interact-hover: hsl(250deg, 20%, 0%);
+  --color-interact-bg: hsl(250deg, 20%, 86%);
+  --color-interact-bg-hover: hsl(250deg, 20%, 80%);
+
+  --color-badge: hsl(346, 55%, 30%);
+  --color-badge-bg: hsl(346, 44%, 90%);
+}
 body {
-  font-family: 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+  font-family: var(--font-ui);
   margin: 0 auto;
   max-width: 1600px;
   padding: 0 5vw;
   line-height: 1.5;
 }
 pre, code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: var(--font-code);
 }
 pre {
   margin: .5em 0;
 }
 code {
   font-size: .85rem;
-  background: #efefef;
-  color: #666;
-  border: solid 1px #eee;
+  background: var(--color-bg);
+  color: var(--color-code);
+  border: solid 1px var(--color-border);
   padding: 0.1em 0.3em;
   border-radius: 4px;
-  
-  & a {
-    text-decoration: none;
-    color: inherit;
-
-    &:hover {
-      color: black;
-    }
-  }
 }
 pre > code {
   display: block;
@@ -36,12 +42,32 @@ pre > code {
   padding: .5em 1em;
 }
 
+.main-title {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 4rem 0;
+
+  & a {
+    color: inherit;
+  }
+}
+
 .section-header {
   margin-bottom: 1em;
 }
 .section-title {
   margin: 3em 0 2em 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   text-align: center;
@@ -49,7 +75,7 @@ pre > code {
 .section-content {
   column-width: 13em;
   column-gap: 3em;
-  column-rule: 1px solid #dfdfdf;
+  column-rule: 1px solid var(--color-border);
 
   & > * {
     break-inside: avoid;
@@ -84,12 +110,13 @@ pre > code {
 
   & a {
     display: inline-block;
-    padding: .3em .2em;
+    padding: .2em 0;
     border-radius: .3em;
     text-decoration: none;
-    color: #555;
+    color: var(--color-interact);
 
     &:hover {
+      color: var(--color-interact-hover);
       text-decoration: underline;
     }
   }
@@ -99,26 +126,29 @@ pre > code {
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   column-gap: 1rem;
   row-gap: 1rem;
-  background: #efefef;
-  padding: 1em;
-  border-radius: 16px;
 }
 .section-tool {
-  border: solid 1px #dcdcdc;
+  border: solid 1px var(--color-border);
   border-radius: 8px;
   padding: 1rem;
-  background: white;
+  background: var(--color-bg);
+
+  & > pre code {
+    padding-left: 0;
+    border: none;
+    background: none;
+  }
 }
 
 .badge {
   display: inline-block;
   text-transform: uppercase;
   font-size: .65rem;
-  background: #f1dbe0;
-  color: #772336;
+  background: var(--color-badge-bg);
+  color: var(--color-badge);
   padding: .1em .5em;
   border-radius: 8px;
-  font-family: 'Source Sans Pro', -apple-system, system-ui, sans-serif;
+  font-family: var(--font-ui);
 }
 
 .config-dialog[open] {
@@ -156,31 +186,51 @@ pre > code {
       background: rgba(255, 255, 255, 0.3);
     }
   }
-  & > div {
-    padding: 1em;
-    max-height: calc(100vh - 20px);
-    overflow-y: auto;
-  }
 }
 
 .button {
-  background: #dcdcdc;
+  background: var(--color-interact-bg);
   border: none;
   padding: .5em 1em;
   border-radius: 4px;
   cursor: pointer;
   font-size: .9rem;
   line-height: 1;
-  color: #333;
+  color: var(--color-interact);
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
 
   &:hover {
-    background: #bbb;
+    color: var(--color-interact-hover);
+    background: var(--color-interact-bg-hover);
   }
 }
 
 ::backdrop {
   background: rgba(0, 0, 0, 0.5);
+}
+
+.config-content {
+  line-height: 1.6;
+  padding: 1.5em;
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+
+  & ul {
+    padding-left: 1.2em;
+  }
+
+  & h3 {
+    margin: 2em 0 0;
+    border-bottom: solid 1px var(--color-border);
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & a {
+    color: inherit;
+  }
 }

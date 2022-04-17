@@ -51,11 +51,6 @@
       - deno.json: `fmt.options.proseWrap`
       - default: always
 
-- title: Bundler
-  manual: https://deno.land/manual/tools/bundler
-  cli: deno bundle <source> [output]
-  api: Deno.emit
-
 - title: Linter
   manual: https://deno.land/manual/tools/linter
   cli: deno lint [files...]
@@ -70,20 +65,25 @@
 
     ### Configuration
 
-    [List of rules](https://lint.deno.land/){target="_blank"}
+    [List of rules](https://lint.deno.land/){target="_blank" .button}
 
     - List of tag names that will be run. Empty list disables all tags and will only use rules from include.
       - CLI: `--rules-tags`
       - deno.json: `lint.rules.tags`
       - default: `["recommended"]`
-    - title: List of rule names that will be excluded from configured tag sets. If the same rule is in include it will be run.
+    - List of rule names that will be excluded from configured tag sets. If the same rule is in include it will be run.
       - CLI: `--rules-exclude`
       - deno.json: `lint.rules.exclude`
       - default: `[]`
-    - title: List of rule names that will be run. Even if the same rule is in exclude it will be run.
+    - List of rule names that will be run. Even if the same rule is in exclude it will be run.
       - CLI: `--rules-include`
       - deno.json: `lint.rules.include`
       - default: `[]`
+
+- title: Bundler
+  manual: https://deno.land/manual/tools/bundler
+  cli: deno bundle <source> [output]
+  api: Deno.emit
 
 - title: Tasks
   manual: https://deno.land/manual/tools/task_runner
