@@ -28,7 +28,7 @@ export default function api(
       {syncName && (
         <>
           {" / "}
-          <Link name={syncName} text="sync" stable={stable} type={type} />
+          <Link name={syncName} text="sync" stable={stable} type="variable" />
         </>
       )}
     </p>

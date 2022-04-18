@@ -43,7 +43,7 @@
         <h3 class="section-subtitle">{{ section.title }}</h3>
 
         <ul class="section-items">
-        {% for item in section.content %}
+        {% for item in section.content | sort(false, false, "name") %}
           <li>
             {{ comp.deno.api(item) | safe }}
           </li>
@@ -65,7 +65,7 @@
         <h3 class="section-subtitle">{{ section.title }}</h3>
 
         <ul class="section-items">
-        {% for item in section.content %}
+        {% for item in section.content | sort(false, false, "name") %}
           <li>
             {{ comp.deno.api(item) | safe }}
           </li>

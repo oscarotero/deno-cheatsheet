@@ -64,13 +64,18 @@ pre > code {
 
 .section-header {
   margin-bottom: 1em;
+  border-bottom: solid 1px var(--color-border);
+  background: white;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 0;
+  margin: 4rem 0 2rem 0;
 }
 .section-title {
-  margin: 3em 0 2em 0;
-  font-size: 2rem;
+  margin: 0;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  text-align: center;
 }
 .section-content {
   column-width: 13em;

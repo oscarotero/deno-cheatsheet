@@ -7,7 +7,7 @@ document.querySelectorAll("[data-modal]").forEach((link) => {
   const tabs = {};
 
   if (dataset.mdn) {
-    tabs.mdn = dataset.mdn;
+    tabs["See at MDN"] = dataset.mdn;
   }
 
   link.addEventListener("click", (e) => {

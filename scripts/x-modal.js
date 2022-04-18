@@ -27,9 +27,8 @@ class XModal extends HTMLElement {
       align-items: center;
       background: black;
       color: white;
-      justify-content: end;
       column-gap: 1em;
-      padding: .5em;
+      padding: .5em 1.5em;
     }
     ul {
       list-style: none;
@@ -38,6 +37,9 @@ class XModal extends HTMLElement {
     }
     a {
       color: inherit;
+    }
+    a:hover {
+      text-decoration: none;
     }
     button {
       width: 2em;
@@ -52,6 +54,7 @@ class XModal extends HTMLElement {
       font-size: 1em;
       cursor: pointer;
       border-radius: 50%;
+      margin-left: auto;
     }
     button:hover {
       background: rgba(255, 255, 255, 0.3);
