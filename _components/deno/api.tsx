@@ -1,6 +1,7 @@
 interface Props {
   name: string;
   stable: boolean;
+  deploy?: boolean;
   sync: boolean;
   type: "function" | "class" | "variable" | "type";
   mdn?: string;
@@ -11,7 +12,7 @@ interface Props {
 }
 
 export default function api(
-  { name, stable, sync, type, mdn, contains }: Props,
+  { name, stable, deploy, sync, type, mdn, contains }: Props,
 ) {
   const syncName = sync ? `${name}Sync` : undefined;
 
@@ -24,7 +25,8 @@ export default function api(
         type={type}
         mdn={mdn}
       />{" "}
-      {!stable && <span className="badge">unstable</span>}
+      {!stable && <span className="badge is-unstable">unstable</span>}
+      {deploy && <span className="badge is-deploy">deploy</span>}
       {syncName && (
         <>
           {" / "}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root {
   --font-ui: Inter, -apple-system, system-ui, sans-serif;
@@ -11,9 +11,6 @@
   --color-interact-hover: hsl(250deg, 20%, 0%);
   --color-interact-bg: hsl(250deg, 20%, 86%);
   --color-interact-bg-hover: hsl(250deg, 20%, 80%);
-
-  --color-badge: hsl(346, 55%, 30%);
-  --color-badge-bg: hsl(346, 44%, 90%);
 }
 body {
   font-family: var(--font-ui);
@@ -27,6 +24,9 @@ pre, code {
 }
 pre {
   margin: .5em 0;
+}
+h1, h2, h3, h4 {
+  font-weight: 600;
 }
 code {
   font-size: .85rem;
@@ -80,7 +80,6 @@ pre > code {
 .section-content {
   column-width: 13em;
   column-gap: 3em;
-  column-rule: 1px solid var(--color-border);
 
   & > * {
     break-inside: avoid;
@@ -115,7 +114,7 @@ pre > code {
 
   & a {
     display: inline-block;
-    padding: .2em 0;
+    padding: .25em 0;
     border-radius: .3em;
     text-decoration: none;
     color: var(--color-interact);
@@ -154,6 +153,16 @@ pre > code {
   padding: .1em .5em;
   border-radius: 8px;
   font-family: var(--font-ui);
+
+  &.is-unstable {
+    --color-badge: hsl(346, 55%, 30%);
+    --color-badge-bg: hsl(346, 44%, 90%);
+  }
+
+  &.is-deploy {
+    --color-badge: hsl(200, 60%, 30%);
+    --color-badge-bg: hsl(200, 60%, 90%);
+  }
 }
 
 .config-dialog[open] {

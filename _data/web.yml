@@ -43,6 +43,7 @@
       mdn: /Web/API/Window/prompt
     - name: console
       stable: true
+      deploy: true
       type: variable
       mdn: /Web/API/Window/console
       contains:
@@ -53,22 +54,27 @@
   content:
     - name: clearInterval
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/clearInterval
     - name: clearTimeout
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/clearTimeout
     - name: queueMicrotask
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/queueMicrotask
     - name: setInterval
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/setInterval
     - name: setTimeout
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/setTimeout
 
@@ -76,22 +82,27 @@
   content:
     - name: fetch
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/fetch
     - name: Headers
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/Headers
     - name: Request
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/Request
     - name: Response
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/Response
     - name: URL
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/URL
     - name: URLSearchParams
@@ -100,6 +111,7 @@
       mdn: /Web/API/URLSearchParams
     - name: URLPattern
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/URLPattern
     - name: FormData
@@ -111,6 +123,7 @@
   content:
     - name: WebSocket
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/WebSocket
     - name: WebSocketStream
@@ -139,18 +152,22 @@
   content:
     - name: PerformanceMeasure
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/PerformanceMeasure
     - name: PerformanceMark
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/PerformanceMark
     - name: PerformanceEntry
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/PerformanceEntry
     - name: performance
       stable: true
+      deploy: true
       type: variable
       mdn: /Web/API/performance_property
       contains:
@@ -178,10 +195,12 @@
   content:
     - name: File
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/File
     - name: Blob
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/Blob
     - name: FileReader
@@ -193,18 +212,22 @@
   content:
     - name: TextDecoder
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/TextDecoder
     - name: TextDecoderStream
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/TextDecoderStream
     - name: TextEncoder
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/TextEncoder
     - name: TextEncoderStream
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/TextEncoderStream
 
@@ -216,6 +239,7 @@
       mdn: /Web/API/ReadableByteStreamController
     - name: ReadableStream
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/ReadableStream
     - name: ReadableStreamDefaultController
@@ -231,6 +255,7 @@
       type: type
     - name: TransformStream
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/TransformStream
     - name: TransformStreamDefaultController
@@ -243,6 +268,7 @@
       mdn: /Web/API/WritableStream
     - name: WritableStreamDefaultController
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/WritableStreamDefaultController
     - name: WritableStreamDefaultWriter
@@ -340,6 +366,7 @@
   content:
     - name: crypto
       stable: true
+      deploy: true
       type: variable
       mdn: /Web/API/crypto_property
       contains:
@@ -355,6 +382,7 @@
       mdn: /Web/API/CryptoKeyPair
     - name: SubtleCrypto
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/SubtleCrypto
 
@@ -362,10 +390,12 @@
   content:
     - name: btoa
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/btoa
     - name: atob
       stable: true
+      deploy: true
       type: function
       mdn: /Web/API/atob
 
@@ -373,6 +403,7 @@
   content:
     - name: BroadcastChannel
       stable: true
+      deploy: true
       type: class
       mdn: /Web/API/BroadcastChannel
 

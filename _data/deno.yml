@@ -25,6 +25,7 @@
       type: function
     - name: Deno.readDir
       stable: true
+      deploy: true
       sync: true
       type: function
     - name: Deno.readFile
@@ -36,6 +37,7 @@
       type: function
     - name: Deno.readTextFile
       stable: true
+      deploy: true
       sync: true
       type: function
     - name: Deno.writeFile
@@ -64,6 +66,7 @@
       type: function
     - name: Deno.stat
       stable: true
+      deploy: true
       sync: true
       type: function
     - name: Deno.symlink
@@ -72,6 +75,7 @@
       type: function
     - name: Deno.realPath
       stable: true
+      deploy: true
       sync: true
       type: function
     - name: Deno.remove
@@ -80,6 +84,7 @@
       type: function
     - name: Deno.lstat
       stable: true
+      deploy: true
       sync: true
       type: function
     - name: Deno.isatty
@@ -125,6 +130,7 @@
       type: function
     - name: Deno.open
       stable: true
+      deploy: true
       sync: true
       type: function
     - name: Deno.read
@@ -262,6 +268,7 @@
       type: variable
     - name: Deno.env
       stable: true
+      deploy: true
       type: variable
     - name: Deno.mainModule
       stable: true
@@ -289,6 +296,7 @@
       type: variable
     - name: Deno.cwd
       stable: true
+      deploy: true
       type: function
     - name: Deno.chdir
       stable: true
@@ -360,6 +368,7 @@
 - title: Network
   content:
     - name: Deno.connect
+      deploy: true
       stable: true
       type: function
     - name: Deno.HttpClient
@@ -367,6 +376,7 @@
       type: class
     - name: Deno.connectTls
       stable: true
+      deploy: true
       type: function
     - name: Deno.listen
       stable: true
@@ -376,12 +386,14 @@
       type: function
     - name: Deno.resolveDns
       stable: true
+      deploy: true
       type: function
     - name: Deno.serveHttp
       stable: true
       type: function
     - name: Deno.startTls
       stable: true
+      deploy: true
       type: function
     - name: Deno.upgradeWebSocket
       stable: true
