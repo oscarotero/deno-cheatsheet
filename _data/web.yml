@@ -314,10 +314,6 @@
       stable: true
       type: class
       mdn: /Web/API/MessageEvent
-    - name: ErrorEvent
-      stable: true
-      type: class
-      mdn: /Web/API/ErrorEvent
     - name: onload
       stable: true
       type: variable
@@ -346,6 +342,21 @@
       stable: true
       type: class
       mdn: /Web/API/CloseEvent
+
+- title: Errors
+  content:
+    - name: reportError
+      stable: true
+      type: function
+      mdn: Web/API/reportError
+    - name: onerror
+      stable: true
+      type: variable
+      mdn: /Web/API/GlobalEventHandlers/onerror
+    - name: ErrorEvent
+      stable: true
+      type: class
+      mdn: /Web/API/ErrorEvent
     - name: DOMException
       stable: true
       type: class

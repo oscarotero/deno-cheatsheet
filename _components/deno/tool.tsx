@@ -53,7 +53,11 @@ function Config({ content }: ConfigProps) {
         <nav>
           <button arial-label="Close">✕</button>
         </nav>
-        <div className="config-content" dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div
+          className="config-content"
+          dangerouslySetInnerHTML={{ __html: content }}
+        >
+        </div>
       </dialog>
     </>
   );

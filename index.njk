@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deno Cheat Sheet</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="scripts/main.js"></script>
+  <link rel="stylesheet" href="styles.css?cache={{ cache }}">
+  <script type="module" src="scripts/main.js?cache={{ cache }}"></script>
+  <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"oscarotero",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");</script>
 </head>
 <body>
   <h1 class="main-title">

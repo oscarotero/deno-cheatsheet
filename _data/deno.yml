@@ -249,6 +249,25 @@
       stable: true
       type: class
 
+- title: Subprocesses
+  content:
+    - name: Deno.Process
+      stable: true
+      type: class
+    - name: Deno.run
+      stable: true
+      type: function
+    - name: Deno.kill
+      stable: true
+      type: function
+    - name: Deno.spawn
+      stable: false
+      sync: true
+      type: function
+    - name: Deno.spawnChild
+      stable: false
+      type: function
+
 - title: Runtime utils
   content:
     - name: Deno.permissions
@@ -256,7 +275,6 @@
       type: variable
       contains:
         name: Deno.Permissions
-
     - name: Deno.PermissionStatus
       stable: true
       type: class
@@ -317,15 +335,6 @@
       stable: true
       type: function
     - name: Deno.execPath
-      stable: true
-      type: function
-    - name: Deno.kill
-      stable: true
-      type: function
-    - name: Deno.Process
-      stable: true
-      type: class
-    - name: Deno.run
       stable: true
       type: function
     - name: Deno.inspect

@@ -3,14 +3,14 @@
 :root {
   --font-ui: Inter, -apple-system, system-ui, sans-serif;
   --font-code: monospace;
-  --color-bg: hsl(250deg, 20%, 95%);
-  --color-border: hsl(250deg, 20%, 86%);
-  --color-code: hsl(250deg, 20%, 40%);
+  --color-bg: hsl(200deg, 20%, 96%);
+  --color-border: hsl(200deg, 20%, 86%);
+  --color-code: hsl(200deg, 20%, 40%);
 
-  --color-interact: hsl(250deg, 20%, 20%);
-  --color-interact-hover: hsl(250deg, 20%, 0%);
-  --color-interact-bg: hsl(250deg, 20%, 86%);
-  --color-interact-bg-hover: hsl(250deg, 20%, 80%);
+  --color-interact: hsl(200deg, 20%, 20%);
+  --color-interact-hover: hsl(200deg, 20%, 0%);
+  --color-interact-bg: hsl(200deg, 20%, 86%);
+  --color-interact-bg-hover: hsl(200deg, 20%, 80%);
 }
 body {
   font-family: var(--font-ui);
