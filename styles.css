@@ -3,14 +3,47 @@
 :root {
   --font-ui: Inter, -apple-system, system-ui, sans-serif;
   --font-code: monospace;
-  --color-bg: hsl(200deg, 20%, 96%);
-  --color-border: hsl(200deg, 20%, 86%);
-  --color-code: hsl(200deg, 20%, 40%);
+  --color-back: white;
+  --color-front: black;
+  --color-bg: hsl(215deg, 20%, 96%);
+  --color-border: hsl(215deg, 20%, 86%);
+  --color-code: hsl(215deg, 20%, 40%);
+  --color-nav-bg: black;
+  --color-nav: white;
 
-  --color-interact: hsl(200deg, 20%, 20%);
-  --color-interact-hover: hsl(200deg, 20%, 0%);
-  --color-interact-bg: hsl(200deg, 20%, 86%);
-  --color-interact-bg-hover: hsl(200deg, 20%, 80%);
+  --color-interact: hsl(215deg, 20%, 20%);
+  --color-interact-hover: hsl(215deg, 20%, 0%);
+  --color-interact-bg: hsl(215deg, 20%, 86%);
+  --color-interact-bg-hover: hsl(215deg, 20%, 80%);
+
+  --color-unstable: hsl(346deg, 55%, 30%);
+  --color-unstable-bg: hsl(346deg, 44%, 90%);
+  --color-deploy: hsl(215deg, 60%, 30%);
+  --color-deploy-bg: hsl(215deg, 60%, 90%);
+
+  @media (prefers-color-scheme: dark) {
+    --color-back: hsl(215deg, 20%, 10%);
+    --color-front: white;
+    --color-bg: hsl(215deg, 20%, 16%);
+    --color-border: hsl(215deg, 20%, 20%);
+    --color-code: hsl(215deg, 20%, 60%);
+    --color-nav-bg: hsl(215deg, 28%, 17%);
+    --color-nav: white;
+
+    --color-interact: hsl(215deg, 20%, 70%);
+    --color-interact-hover: hsl(215deg, 20%, 100%);
+    --color-interact-bg: hsl(215deg, 20%, 26%);
+    --color-interact-bg-hover: hsl(215deg, 20%, 30%);
+
+    --color-unstable: hsl(346deg, 55%, 70%);
+    --color-unstable-bg: hsl(346deg, 44%, 20%);
+    --color-deploy: hsl(215deg, 60%, 70%);
+    --color-deploy-bg: hsl(215deg, 60%, 20%);
+  }
+}
+html {
+  background: var(--color-back);
+  color: var(--color-front);
 }
 body {
   font-family: var(--font-ui);
@@ -65,7 +98,7 @@ pre > code {
 .section-header {
   margin-bottom: 1em;
   border-bottom: solid 1px var(--color-border);
-  background: white;
+  background: var(--color-back);
   position: sticky;
   top: 0;
   padding: 0.5rem 0;
@@ -148,20 +181,18 @@ pre > code {
   display: inline-block;
   text-transform: uppercase;
   font-size: .65rem;
-  background: var(--color-badge-bg);
-  color: var(--color-badge);
   padding: .1em .5em;
   border-radius: 8px;
   font-family: var(--font-ui);
 
   &.is-unstable {
-    --color-badge: hsl(346, 55%, 30%);
-    --color-badge-bg: hsl(346, 44%, 90%);
+    background: var(--color-unstable-bg);
+    color: var(--color-unstable);
   }
 
   &.is-deploy {
-    --color-badge: hsl(200, 60%, 30%);
-    --color-badge-bg: hsl(200, 60%, 90%);
+    background: var(--color-deploy-bg);
+    color: var(--color-deploy);
   }
 }
 
@@ -172,13 +203,16 @@ pre > code {
   grid-template-rows: auto 1fr;
   border-radius: 1em 1em .5em .5em;
   border: none;
+  background: var(--color-back);
+  color: var(--color-front);
 
   & nav {
     display: flex;
     align-items: center;
-    background: black;
-    color: white;
+    background: var(--color-nav-bg);
+    color: var(--color-nav);
     justify-content: end;
+    
     column-gap: 1em;
     padding: .5em;
   }

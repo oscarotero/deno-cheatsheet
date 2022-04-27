@@ -25,8 +25,8 @@ class XModal extends HTMLElement {
     nav {
       display: flex;
       align-items: center;
-      background: black;
-      color: white;
+      background: var(--color-nav-bg);
+      color: var(--color-nav);
       column-gap: 1em;
       padding: .5em 1.5em;
     }
