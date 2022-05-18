@@ -80,11 +80,6 @@
       - deno.json: `lint.rules.include`
       - default: `[]`
 
-- title: Bundler
-  manual: https://deno.land/manual/tools/bundler
-  cli: deno bundle <source> [output]
-  api: Deno.emit
-
 - title: Tasks
   manual: https://deno.land/manual/tools/task_runner
   cli: deno task <task> [args...]
