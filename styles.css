@@ -80,10 +80,19 @@ pre > code {
   letter-spacing: -0.02em;
   margin: 2rem 0;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+
+  & small {
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  & img {
+    align-self: center;
+  }
 }
 .main-footer {
   text-align: center;
