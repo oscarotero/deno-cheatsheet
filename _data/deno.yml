@@ -110,16 +110,7 @@
     - name: Deno.test
       stable: true
       type: function
-    - name: Deno.applySourceMap
-      stable: false
-      type: function
     - name: Deno.bench
-      stable: false
-      type: function
-    - name: Deno.emit
-      stable: false
-      type: function
-    - name: Deno.formatDiagnostics
       stable: false
       type: function
 
