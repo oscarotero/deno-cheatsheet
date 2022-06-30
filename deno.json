@@ -5,7 +5,8 @@
     "jsxImportSource": "https://esm.sh/react@18.0.0"
   },
   "tasks": {
-    "build": "deno run -A https://deno.land/x/lume@v1.7.4/ci.ts",
-    "serve": "deno task build -- -s"
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "lume": "deno eval \"import 'lume/task.ts'\" --"
   }
 }

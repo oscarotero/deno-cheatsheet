@@ -358,9 +358,6 @@
     - name: Deno.unrefTimer
       stable: false
       type: function
-    - name: Deno.sleepSync
-      stable: false
-      type: function
     - name: Deno.systemMemoryInfo
       stable: false
       type: function
