@@ -173,9 +173,6 @@
     - name: Deno.UnsafeFnPointer
       stable: false
       type: class
-    - name: Deno.UnsafePointer
-      stable: false
-      type: class
     - name: Deno.UnsafePointerView
       stable: false
       type: class
@@ -341,6 +338,9 @@
       stable: false
       type: function
     - name: Deno.getUid
+      stable: false
+      type: function
+    - name: Deno.getGid
       stable: false
       type: function
     - name: Deno.hostname
