@@ -483,95 +483,95 @@
 - title: WebGPU
   content:
     - name: GPU
-      stable: true
+      stable: false
       type: class
     - name: GPUAdapter
-      stable: true
+      stable: false
       type: class
     - name: GPUBindGroup
-      stable: true
+      stable: false
       type: class
     - name: GPUBindGroupLayout
-      stable: true
+      stable: false
       type: class
     - name: GPUBuffer
-      stable: true
+      stable: false
       type: class
     - name: GPUBufferUsage
-      stable: true
+      stable: false
       type: class
     - name: GPUColorWrite
-      stable: true
+      stable: false
       type: class
     - name: GPUCommandBuffer
-      stable: true
+      stable: false
       type: class
     - name: GPUCommandEncoder
-      stable: true
+      stable: false
       type: class
     - name: GPUComputePassEncoder
-      stable: true
+      stable: false
       type: class
     - name: GPUComputePipeline
-      stable: true
+      stable: false
       type: class
     - name: GPUDevice
-      stable: true
+      stable: false
       type: class
     - name: GPUMapMode
-      stable: true
+      stable: false
       type: class
     - name: GPUOutOfMemoryError
-      stable: true
+      stable: false
       type: class
     - name: GPUPipelineLayout
-      stable: true
+      stable: false
       type: class
     - name: GPUQuerySet
-      stable: true
+      stable: false
       type: class
     - name: GPUQueue
-      stable: true
+      stable: false
       type: class
     - name: GPURenderBundle
-      stable: true
+      stable: false
       type: class
     - name: GPURenderBundleEncoder
-      stable: true
+      stable: false
       type: class
     - name: GPURenderPassEncoder
-      stable: true
+      stable: false
       type: class
     - name: GPURenderPipeline
-      stable: true
+      stable: false
       type: class
     - name: GPUSampler
-      stable: true
+      stable: false
       type: class
     - name: GPUShaderModule
-      stable: true
+      stable: false
       type: class
     - name: GPUShaderStage
-      stable: true
+      stable: false
       type: class
     - name: GPUSupportedFeatures
-      stable: true
+      stable: false
       type: class
     - name: GPUSupportedLimits
-      stable: true
+      stable: false
       type: class
     - name: GPUTexture
-      stable: true
+      stable: false
       type: class
     - name: GPUTextureUsage
-      stable: true
+      stable: false
       type: class
     - name: GPUTextureView
-      stable: true
+      stable: false
       type: class
     - name: GPUUncapturedErrorEvent
-      stable: true
+      stable: false
       type: class
     - name: GPUValidationError
-      stable: true
+      stable: false
       type: class
