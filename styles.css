@@ -131,6 +131,12 @@ pre > code {
   margin-bottom: 1em;
   border-radius: 4px;
   overflow: hidden;
+
+  & p {
+    font-size: .85rem;
+    margin-top: 0;
+    color: var(--color-code);
+  }
 }
 .section-subtitle {
   font-size: 1rem;
@@ -193,6 +199,7 @@ pre > code {
   padding: .1em .5em;
   border-radius: 8px;
   font-family: var(--font-ui);
+  font-weight: normal;
 
   &.is-unstable {
     background: var(--color-unstable-bg);
@@ -200,6 +207,11 @@ pre > code {
   }
 
   &.is-deploy {
+    background: var(--color-deploy-bg);
+    color: var(--color-deploy);
+  }
+
+  &.is-browser {
     background: var(--color-deploy-bg);
     color: var(--color-deploy);
   }

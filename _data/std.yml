@@ -1,0 +1,150 @@
+- title: Archive/Tar
+  url: /archive/tar.ts
+  description: Provides a Tar and Untar classes for compressing and decompressing arbitrary data.
+- title: Async
+  url: /async/mod.ts
+  description: Provide help with asynchronous tasks like delays, debouncing, deferring, or pooling. 
+- title: Bytes
+  url: /bytes/mod.ts
+  description: Provides helper functions to manipulate Uint8Array byte slices that are not included on the Uint8Array prototype.
+- title: Collections
+  url: /collections/mod.ts
+  description: Functions for specific common tasks around collection types like Array and Record.
+- title: Crypto
+  url: /crypto/mod.ts
+  description: Extensions to the Web Crypto supporting additional encryption APIs.
+- title: Datetime
+  url: /datetime/mod.ts
+  browser: true
+  description: Utilities for dealing with Date objects.
+- title: Dotenv
+  url: /dotenv/mod.ts
+  description: Load environment variables from .env files.
+- title: Encoding/ascii85
+  url: /encoding/ascii85.ts
+  browser: true
+  description: Encode and decode for Ascii85/base85 encoding.
+- title: Encoding/base32
+  url: /encoding/base32.ts
+  browser: true
+  description: Encode and decode for base32 encoding.
+- title: Encoding/base64
+  url: /encoding/base64.ts
+  browser: true
+  description: Encode and decode for base64 encoding.
+- title: Encoding/base64 (URL safe)
+  url: /encoding/base64url.ts
+  browser: true
+  description: Encode and decode for base64 URL safe encoding.
+- title: Encoding/binary
+  url: /encoding/binary.ts
+  description: Functions for encoding binary data in array buffers.
+- title: Encoding/csv (stringify)
+  url: /encoding/csv_stringify.ts
+  browser: true
+  description: Provides stringify to encode data following the CSV specification.
+- title: Encoding/csv
+  url: /encoding/csv.ts
+  description: Port of the Go encoding/csv library.
+- title: Encoding/front matter
+  url: /encoding/front_matter.ts
+  description: Extract and test functions to handle many forms of front matter.
+- title: Encoding/hex
+  browser: true
+  url: /encoding/hex.ts
+  description: Port of the Go encoding/hex library.
+- title: Encoding/jsonc
+  browser: true
+  url: /encoding/jsonc.ts
+  description: Parse function for parsing JSONC strings.
+- title: Encoding/toml
+  browser: true
+  url: /encoding/toml.ts
+  description: Parse and stringify for handling TOML encoded data.
+- title: Encoding/varint
+  url: /encoding/varint.ts
+  description: Functions for encoding typed integers in array buffers.
+- title: Encoding/yaml
+  url: /encoding/varint.ts
+  browser: true
+  description: Parse and stringify for handling YAML encoded data.
+- title: Flags
+  url: /flags/mod.ts
+  browser: true
+  description: Command line arguments parser based on minimist.
+- title: Fmt/bytes
+  url: /fmt/bytes.ts
+  browser: true
+  description: Pretty print bytes.
+- title: Fmt/colors
+  url: /fmt/colors.ts
+  browser: true
+  description: String formatters and utilities for dealing with ANSI color codes.
+- title: Fmt/printf
+  url: /fmt/printf.ts
+  description: Sprintf and printf} for printing formatted strings to stdout.
+- title: FS
+  url: /fs/mod.ts
+  description: Helpers for working with the filesystem.
+- title: HTTP
+  url: /http/mod.ts
+  description: Provides user-friendly serve on top of Deno's native HTTP server and other utilities for creating HTTP servers and clients.
+- title: IO
+  url: /io/mod.ts
+  description: Utilities for working with Deno's readers, writers, and web streams. 
+- title: Log
+  url: /log/mod.ts
+  description: Logging library with the support for terminal and file outputs. Also provides interfaces for building custom loggers.
+- title: Media types
+  url: /media_types/mod.ts
+  description: Utility functions for media types (MIME types).
+- title: Node
+  url: /node
+  description: Compatibility layer for the Node.js standard library.
+- title: Path
+  url: /path/mod.ts
+  browser: true
+  description: Utilities for working with OS-specific file paths.
+- title: Permissions
+  url: /permissions/mod.ts
+  description: Helpers for interacting with Deno's permissions system.
+- title: Semver
+  url: /semver/mod.ts
+  browser: true
+  description: The semantic version parser. Adapted directly from semver.
+- title: Signal
+  url: /signal/mod.ts
+  description: Higher level API for dealing with OS signals.
+- title: Streams
+  url: /streams/mod.ts
+  description: Utilities for working with the Streams API. Includes buffering and conversion.
+- title: Testing/asserts
+  url: /testing/asserts.ts
+  browser: true
+  description: A library of assertion functions. 
+- title: Testing/bdd
+  url: /testing/bdd.ts
+  description: A BDD interface to Deno.test() API.
+- title: Testing/mock
+  url: /testing/mock.ts
+  browser: true
+  description: A mocking and spying library.
+- title: Testing/snapshot
+  url: /testing/snapshot.ts
+  description: A snapshotting library.
+- title: Testing/time
+  url: /testing/time.ts
+  browser: true
+  description: Utilities for mocking time while testing.
+- title: Textproto
+  url: /textproto/time.ts
+  description: A reader for dealing with low level text based protocols.
+- title: UUID
+  browser: true
+  url: /uuid/mod.ts
+  description: Generators and validators for UUIDs for versions v1, v4 and v5.
+
+
+
+
+

@@ -18,11 +18,9 @@ export default function doc(
 
   return (
     <>
-      {cli && (
-        <pre>
+      {cli && <pre>
           <code>{cli}</code>
-        </pre>
-      )}
+      </pre>}
       {api && <Api name={api} stable={stable} />}{" "}
       {configHtml && <Config content={configHtml} />}
     </>

@@ -117,4 +117,9 @@
   manual: https://deno.land/manual/tools/benchmarker
   cli: deno bench [files...]
   api: Deno.bench
+
+- title: Vendoring
+  stable: true
+  manual: https://deno.land/manual/tools/vendor
+  cli: deno vendor <specifiers...>
   

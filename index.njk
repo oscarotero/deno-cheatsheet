@@ -78,6 +78,29 @@
     </div>
   </section>
 
+  <section class="section">
+    <header class="section-header">
+      <h2 class="section-title">Standard library</h2>
+    </header>
+
+    <div class="section-content">
+      {% for section in std %}
+      <section class="section-subsection">
+        <h3 class="section-subtitle">
+          <a href="https://deno.land/std{{ section.url }}" data-modal>
+            {{ section.title }}
+          </a>
+
+          {% if section.browser %}
+          &nbsp; <span class="badge is-browser">Browser</badger>
+          {% endif %}
+        </h3>
+        {{ section.description | md | safe }}
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+
   <x-modal></x-modal>
 
   <footer class="main-footer">
