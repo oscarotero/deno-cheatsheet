@@ -10,9 +10,4 @@ export default lume({ location })
   .copy("scripts")
   .copy("deno-logo.svg")
   .ignore("README.md")
-  .data("cache", Date.now())
-  .script(
-    "deploy",
-    "lume",
-    "rsync -r _site/ oscarotero@oscarotero.com:~/www/deno",
-  );
+  .data("cache", Date.now());
