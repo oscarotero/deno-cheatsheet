@@ -97,9 +97,6 @@
       stable: true
       sync: true
       type: function
-    - name: Deno.setRaw
-      stable: false
-      type: function
     - name: Deno.utime
       stable: false
       sync: true
@@ -344,7 +341,7 @@
       stable: false
       type: function
     - name: Deno.hostname
-      stable: false
+      stable: true
       type: function
     - name: Deno.loadavg
       stable: false
@@ -353,10 +350,10 @@
       stable: false
       type: function
     - name: Deno.refTimer
-      stable: false
+      stable: true
       type: function
     - name: Deno.unrefTimer
-      stable: false
+      stable: true
       type: function
     - name: Deno.systemMemoryInfo
       stable: false
@@ -390,6 +387,9 @@
       type: function
     - name: Deno.serveHttp
       stable: true
+      type: function
+    - name: Deno.serve
+      stable: false
       type: function
     - name: Deno.startTls
       stable: true

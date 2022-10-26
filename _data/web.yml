@@ -295,6 +295,16 @@
       type: class
       mdn: /Web/API/CompressionStream
 
+- title: Cache
+  content:
+    - name: Cache
+      stable: true
+      type: class
+      mdn: /Web/API/Cache
+    - name: CacheStorage
+      stable: true
+      type: class
+      mdn: /Web/API/CacheStorage
 
 - title: Events
   content:
