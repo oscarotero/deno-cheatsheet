@@ -39,10 +39,6 @@
 - title: Encoding/binary
   url: /encoding/binary.ts
   description: Functions for encoding binary data in array buffers.
-- title: Encoding/csv (stringify)
-  url: /encoding/csv_stringify.ts
-  browser: true
-  description: Provides stringify to encode data following the CSV specification.
 - title: Encoding/csv
   url: /encoding/csv.ts
   description: Port of the Go encoding/csv library.
@@ -136,9 +132,6 @@
   url: /testing/time.ts
   browser: true
   description: Utilities for mocking time while testing.
-- title: Textproto
-  url: /textproto/time.ts
-  description: A reader for dealing with low level text based protocols.
 - title: UUID
   browser: true
   url: /uuid/mod.ts

@@ -98,7 +98,7 @@
       sync: true
       type: function
     - name: Deno.utime
-      stable: false
+      stable: true
       sync: true
       type: function
 
@@ -161,7 +161,7 @@
       sync: true
       type: function
     - name: Deno.futime
-      stable: false
+      stable: true
       sync: true
       type: function
 
@@ -332,22 +332,22 @@
       stable: false
       type: type
     - name: Deno.consoleSize
+      stable: true
+      type: function
+    - name: Deno.uid
       stable: false
       type: function
-    - name: Deno.getUid
-      stable: false
-      type: function
-    - name: Deno.getGid
+    - name: Deno.gid
       stable: false
       type: function
     - name: Deno.hostname
       stable: true
       type: function
     - name: Deno.loadavg
-      stable: false
+      stable: true
       type: function
     - name: Deno.osRelease
-      stable: false
+      stable: true
       type: function
     - name: Deno.refTimer
       stable: true
