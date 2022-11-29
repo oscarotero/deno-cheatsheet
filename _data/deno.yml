@@ -108,7 +108,7 @@
       stable: true
       type: function
     - name: Deno.bench
-      stable: false
+      stable: true
       type: function
 
 - title: Resources
@@ -239,6 +239,9 @@
 
 - title: Subprocesses
   content:
+    - name: Deno.Command
+      stable: false
+      type: class
     - name: Deno.Process
       stable: true
       type: class
@@ -335,10 +338,10 @@
       stable: true
       type: function
     - name: Deno.uid
-      stable: false
+      stable: true
       type: function
     - name: Deno.gid
-      stable: false
+      stable: true
       type: function
     - name: Deno.hostname
       stable: true
@@ -356,7 +359,7 @@
       stable: true
       type: function
     - name: Deno.systemMemoryInfo
-      stable: false
+      stable: true
       type: function
     - name: Deno.umask
       stable: false
@@ -417,7 +420,7 @@
       stable: false
       type: function
     - name: Deno.networkInterfaces
-      stable: false
+      stable: true
       type: function
     - name: Deno.upgradeHttp
       stable: false
