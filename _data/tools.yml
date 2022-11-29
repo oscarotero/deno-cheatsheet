@@ -114,6 +114,7 @@
       `exit`
 
 - title: Benchmarking
+  stable: true
   manual: https://deno.land/manual/tools/benchmarker
   cli: deno bench [files...]
   api: Deno.bench
