@@ -251,13 +251,6 @@
     - name: Deno.kill
       stable: true
       type: function
-    - name: Deno.spawn
-      stable: false
-      sync: true
-      type: function
-    - name: Deno.spawnChild
-      stable: false
-      type: function
 
 - title: Runtime utils
   content:
