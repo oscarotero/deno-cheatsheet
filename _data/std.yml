@@ -43,6 +43,7 @@
   url: /encoding/csv.ts
   description: Port of the Go encoding/csv library.
 - title: Encoding/front matter
+  browser: true
   url: /encoding/front_matter.ts
   description: Extract and test functions to handle many forms of front matter.
 - title: Encoding/hex

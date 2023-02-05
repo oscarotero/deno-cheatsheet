@@ -50,6 +50,10 @@
       - CLI: `--options-prose-wrap={always,never,preserve}`
       - deno.json: `fmt.options.proseWrap`
       - default: always
+    - Remove semicolons.
+      - CLI: `--options-no-semicolons`
+      - deno.json: `fmt.options.semiColons`
+      - default: Semicolons are enforced by default
 
 - title: Linter
   manual: https://deno.land/manual/tools/linter

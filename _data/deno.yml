@@ -345,6 +345,9 @@
     - name: Deno.osRelease
       stable: true
       type: function
+    - name: Deno.osUptime
+      stable: false
+      type: function
     - name: Deno.refTimer
       stable: true
       type: function
