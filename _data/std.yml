@@ -95,9 +95,6 @@
 - title: Media types
   url: /media_types/mod.ts
   description: Utility functions for media types (MIME types).
-- title: Node
-  url: /node
-  description: Compatibility layer for the Node.js standard library.
 - title: Path
   url: /path/mod.ts
   browser: true

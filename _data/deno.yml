@@ -240,7 +240,7 @@
 - title: Subprocesses
   content:
     - name: Deno.Command
-      stable: false
+      stable: true
       type: class
     - name: Deno.Process
       stable: true
@@ -346,7 +346,7 @@
       stable: true
       type: function
     - name: Deno.osUptime
-      stable: false
+      stable: true
       type: function
     - name: Deno.refTimer
       stable: true
