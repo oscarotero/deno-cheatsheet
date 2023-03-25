@@ -13,6 +13,10 @@
 - title: Crypto
   url: /crypto/mod.ts
   description: Extensions to the Web Crypto supporting additional encryption APIs.
+- title: CSV
+  url: /csv/mod.ts
+  browser: true
+  description: Encode and decode for CSV.
 - title: Datetime
   url: /datetime/mod.ts
   browser: true
@@ -28,6 +32,10 @@
   url: /encoding/base32.ts
   browser: true
   description: Encode and decode for base32 encoding.
+- title: Encoding/base58
+  url: /encoding/base58.ts
+  browser: true
+  description: Encode and decode for base58 encoding.
 - title: Encoding/base64
   url: /encoding/base64.ts
   browser: true
@@ -39,32 +47,13 @@
 - title: Encoding/binary
   url: /encoding/binary.ts
   description: Functions for encoding binary data in array buffers.
-- title: Encoding/csv
-  url: /encoding/csv.ts
-  description: Port of the Go encoding/csv library.
-- title: Encoding/front matter
-  browser: true
-  url: /encoding/front_matter.ts
-  description: Extract and test functions to handle many forms of front matter.
 - title: Encoding/hex
   browser: true
   url: /encoding/hex.ts
   description: Port of the Go encoding/hex library.
-- title: Encoding/jsonc
-  browser: true
-  url: /encoding/jsonc.ts
-  description: Parse function for parsing JSONC strings.
-- title: Encoding/toml
-  browser: true
-  url: /encoding/toml.ts
-  description: Parse and stringify for handling TOML encoded data.
 - title: Encoding/varint
   url: /encoding/varint.ts
   description: Functions for encoding typed integers in array buffers.
-- title: Encoding/yaml
-  url: /encoding/varint.ts
-  browser: true
-  description: Parse and stringify for handling YAML encoded data.
 - title: Flags
   url: /flags/mod.ts
   browser: true
@@ -80,6 +69,10 @@
 - title: Fmt/printf
   url: /fmt/printf.ts
   description: Sprintf and printf} for printing formatted strings to stdout.
+- title: Front matter
+  url: /front_matter/mod.ts
+  browser: true
+  description: Extract front matter from strings.
 - title: FS
   url: /fs/mod.ts
   description: Helpers for working with the filesystem.
@@ -89,6 +82,12 @@
 - title: IO
   url: /io/mod.ts
   description: Utilities for working with Deno's readers, writers, and web streams. 
+- title: JSON
+  url: /json/mod.ts
+  description: Functions for parsing and stringify JSON data. 
+- title: JSONC
+  url: /jsonc/mod.ts
+  description: Function for parsing JSONC (JSON with comments) strings.
 - title: Log
   url: /log/mod.ts
   description: Logging library with the support for terminal and file outputs. Also provides interfaces for building custom loggers.
@@ -130,12 +129,15 @@
   url: /testing/time.ts
   browser: true
   description: Utilities for mocking time while testing.
+- title: TOML
+  browser: true
+  url: /toml/mod.ts
+  description: Parse and stringify functions for handling TOML encoded data.
 - title: UUID
   browser: true
   url: /uuid/mod.ts
   description: Generators and validators for UUIDs for versions v1, v4 and v5.
-
-
-
-
-
+- title: YAML
+  browser: true
+  url: /yaml/mod.ts
+  description: Parse and stringify for handling YAML encoded data.

@@ -278,6 +278,9 @@
     - name: Deno.noColor
       stable: true
       type: variable
+    - name: Deno.openKv
+      stable: false
+      type: function
     - name: Deno.pid
       stable: true
       type: variable
