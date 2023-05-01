@@ -206,6 +206,11 @@ pre > code {
     color: var(--color-unstable);
   }
 
+  &.is-deprecated {
+    border: solid 1px var(--color-unstable-bg);
+    color: var(--color-unstable);
+  }
+
   &.is-deploy {
     background: var(--color-deploy-bg);
     color: var(--color-deploy);

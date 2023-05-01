@@ -247,6 +247,7 @@
       type: class
     - name: Deno.run
       stable: true
+      deprecated: true
       type: function
     - name: Deno.kill
       stable: true

@@ -1,6 +1,7 @@
 interface Props {
   name: string;
   stable: boolean;
+  deprecated?: boolean;
   deploy?: boolean;
   sync: boolean;
   type: "function" | "class" | "variable" | "type";
@@ -12,7 +13,7 @@ interface Props {
 }
 
 export default function api(
-  { name, stable, deploy, sync, type, mdn, contains }: Props,
+  { name, stable, deprecated, deploy, sync, type, mdn, contains }: Props,
 ) {
   const syncName = sync ? `${name}Sync` : undefined;
 
@@ -26,6 +27,7 @@ export default function api(
         mdn={mdn}
       />{" "}
       {!stable && <span className="badge is-unstable">unstable</span>}
+      {deprecated && <span className="badge is-deprecated">deprecated</span>}
       {deploy && <span className="badge is-deploy">deploy</span>}
       {syncName && (
         <>
