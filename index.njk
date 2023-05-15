@@ -20,6 +20,7 @@
       {% for tool in tools %}
       <section class="section-tool">
         <h3 class="section-subtitle">
+          <span class="section-tool-img">{{ tool.emoji }}</span>
           <a href="{{ tool.manual }}" data-modal>
             {{ tool.title }}
           </a>
@@ -87,7 +88,7 @@
       {% for section in std %}
       <section class="section-subsection">
         <h3 class="section-subtitle">
-          <a href="https://deno.land/std{{ section.url }}" data-modal>
+          <a href="https://deno.land/std{{ section.url }}">
             {{ section.title }}
           </a>
 

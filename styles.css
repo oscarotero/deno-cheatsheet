@@ -78,7 +78,7 @@ pre > code {
 .main-title {
   font-size: 2rem;
   letter-spacing: -0.02em;
-  margin: 2rem 0;
+  margin: clamp(2rem, 5vw, 100px) 0;
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -180,16 +180,29 @@ pre > code {
   row-gap: 1rem;
 }
 .section-tool {
-  border: solid 1px var(--color-border);
   border-radius: 8px;
   padding: 1rem;
   background: var(--color-bg);
+  font-size: 0.85em;
 
   & > pre code {
     padding-left: 0;
     border: none;
     background: none;
   }
+
+  & a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.section-tool-img {
+  font-size: 40px;
+  float: right;
+  margin-top: -10px;
 }
 
 .badge {
