@@ -76,6 +76,9 @@
 - title: FS
   url: /fs/mod.ts
   description: Helpers for working with the filesystem.
+- title: HTML/Entities
+  url: /html/entities.ts
+  description: Functions for HTML tasks such as escaping or unescaping HTML entities.
 - title: HTTP
   url: /http/mod.ts
   description: Provides user-friendly serve on top of Deno's native HTTP server and other utilities for creating HTTP servers and clients.

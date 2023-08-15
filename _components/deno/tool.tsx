@@ -12,11 +12,7 @@ export default function doc({ cli, links }: Props) {
       <pre>
         <code>{cli}</code>
       </pre>
-      {
-        links?.map((link) => 
-          <a href={link.url} data-modal>{link.text}</a>
-        )
-      }
+      {links?.map((link) => <a href={link.url} data-modal>{link.text}</a>)}
     </>
   );
 }
