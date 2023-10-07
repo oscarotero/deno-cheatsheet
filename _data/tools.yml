@@ -1,21 +1,21 @@
 - title: Testing
   emoji: 🧪
-  manual: https://deno.land/manual/testing
+  manual: https://docs.deno.com/runtime/manual/basics/testing/
   cli: deno test [paths...]
   stable: true
   links:
     - text: Deno.test()
-      url: https://doc.deno.land/deno/stable/~/Deno.test
+      url: https://deno.land/api?s=Deno.DenoTest
 
 - title: Formatter
   emoji: 💅
-  manual: https://deno.land/manual/tools/formatter
+  manual: https://docs.deno.com/runtime/manual/tools/formatter
   cli: deno fmt [files...]
   stable: true
 
 - title: Linter
   emoji: 🔍
-  manual: https://deno.land/manual/tools/linter
+  manual: https://docs.deno.com/runtime/manual/tools/linter
   cli: deno lint [files...]
   stable: true
   links:
@@ -25,53 +25,59 @@
 - title: Tasks
   emoji: ⚙️
   stable: true
-  manual: https://deno.land/manual/tools/task_runner
+  manual: https://docs.deno.com/runtime/manual/tools/task_runner
   cli: deno task <task> [args...]
 
 - title: Benchmarking
   emoji: 📈
   stable: true
-  manual: https://deno.land/manual/tools/benchmarker
+  manual: https://docs.deno.com/runtime/manual/tools/benchmarker
   cli: deno bench [files...]
   links:
     - text: Deno.bench()
-      url: https://doc.deno.land/deno/stable/~/Deno.bench
+      url: https://deno.land/api?s=Deno.bench
 
 - title: Dependency inspector
   emoji: 👓
   stable: true
-  manual: https://deno.land/manual/tools/dependency_inspector
+  manual: https://docs.deno.com/runtime/manual/tools/dependency_inspector
   cli: deno info [url]
 
 - title: Documentation
   emoji: 📄
   stable: true
-  manual: https://deno.land/manual/tools/documentation_generator
+  manual: https://docs.deno.com/runtime/manual/tools/documentation_generator
   cli: deno doc [url]
 
 - title: Compiling executables
   emoji: 📦
   stable: true
-  manual: https://deno.land/manual/tools/compiler
+  manual: https://docs.deno.com/runtime/manual/tools/compiler
   cli: deno compile [url]
 
 - title: REPL
   emoji: 🛎
   stable: true
-  manual: https://deno.land/manual/tools/repl
+  manual: https://docs.deno.com/runtime/manual/tools/repl
   cli: deno repl
 
 - title: Script installer
   emoji: 📌
   stable: true
-  manual: https://deno.land/manual/tools/script_installer
+  manual: https://docs.deno.com/runtime/manual/tools/script_installer
   cli: deno install [url]
 
 - title: Vendoring
   emoji: 🧳
   stable: true
-  manual: https://deno.land/manual/tools/vendor
+  manual: https://docs.deno.com/runtime/manual/tools/vendor
   cli: deno vendor <specifiers...>
+
+- title: Jupyter
+  emoji: 🔭
+  stable: false
+  manual: https://docs.deno.com/runtime/manual/tools/jupyter
+  cli: deno jupyter
 
 - title: Init
   emoji: 🚀

@@ -49,9 +49,7 @@ interface LinkProps {
 
 function Link({ name, text, stable, type, mdn }: LinkProps) {
   const suffix = type === "function" ? "()" : "";
-  const href = `https://doc.deno.land/deno/${
-    stable ? "stable" : "unstable"
-  }/~/${name}`;
+  const href = `https://deno.land/api?${stable ? "" : "unstable&"}s=${name}`;
 
   const mdnHref = mdn ? `https://developer.mozilla.org/en-US/docs${mdn}` : null;
 

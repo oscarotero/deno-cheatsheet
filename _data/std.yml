@@ -136,6 +136,14 @@
   browser: true
   url: /toml/mod.ts
   description: Parse and stringify functions for handling TOML encoded data.
+- title: ULID
+  browser: true
+  url: /ulid/mod.ts
+  description: Utilities for generating [ULID](https://github.com/ulid/spec) and decoding the timestamp from the given ULID.
+- title: URL
+  browser: true
+  url: /url/mod.ts
+  description: Utilities for working with URL paths.
 - title: UUID
   browser: true
   url: /uuid/mod.ts
