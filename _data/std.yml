@@ -82,9 +82,9 @@
 - title: HTTP
   url: /http/mod.ts
   description: Provides user-friendly serve on top of Deno's native HTTP server and other utilities for creating HTTP servers and clients.
-- title: IO
-  url: /io/mod.ts
-  description: Utilities for working with Deno's readers, writers, and web streams. 
+# - title: IO
+#   url: /io/mod.ts
+#   description: Utilities for working with Deno's readers, writers, and web streams. 
 - title: JSON
   url: /json/mod.ts
   description: Functions for parsing and stringify JSON data. 

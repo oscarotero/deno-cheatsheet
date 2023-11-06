@@ -11,6 +11,6 @@
     "deploy": "deno task build && rsync -r _site/ 'oscarotero@oscarotero.com:~/www/deno'"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.19.1/"
+    "lume/": "https://deno.land/x/lume@v1.19.3/"
   }
 }

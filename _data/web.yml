@@ -12,6 +12,10 @@
       stable: true
       type: variable
       mdn: /Web/API/Window/self
+    - name: name
+      stable: true
+      type: variable
+      mdn: /Web/API/Window/name
     
     - name: location
       stable: true
@@ -129,6 +133,13 @@
     - name: WebSocketStream
       stable: false
       type: class
+
+- title: EventSource
+  content:
+    - name: EventSource
+      stable: true
+      type: class
+      mdn: /Web/API/EventSource
 
 - title: Web Workers
   content:
