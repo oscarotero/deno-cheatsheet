@@ -92,6 +92,7 @@
       type: function
     - name: Deno.isatty
       stable: true
+      deprecated: true
       type: function
     - name: Deno.link
       stable: true
@@ -110,14 +111,19 @@
     - name: Deno.bench
       stable: true
       type: function
+    - name: Deno.cron
+      stable: true
+      type: function
 
 - title: Resources
   content:
     - name: Deno.resources
       stable: true
+      deprecated: true
       type: function
     - name: Deno.close
       stable: true
+      deprecated: true
       type: function
     - name: Deno.open
       stable: true
@@ -138,6 +144,7 @@
       type: function
     - name: Deno.ftruncate
       stable: true
+      deprecated: true
       sync: true
       type: function
     - name: Deno.fdatasync
@@ -339,6 +346,7 @@
       type: function
     - name: Deno.metrics
       stable: true
+      deprecated: true
       type: function
     - name: Deno.addSignalListener
       stable: true
@@ -417,6 +425,7 @@
       type: function
     - name: Deno.serveHttp
       stable: true
+      deprecate: true
       type: function
     - name: Deno.serve
       stable: true
@@ -448,7 +457,4 @@
       type: function
     - name: Deno.networkInterfaces
       stable: true
-      type: function
-    - name: Deno.upgradeHttp
-      stable: false
       type: function

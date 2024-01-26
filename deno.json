@@ -1,16 +1,20 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "https://esm.sh/react@18.2.0"
+    "jsxImportSource": "npm:react",
+    "types": [
+      "lume/types.ts",
+      "https://unpkg.com/@types/react@18.2.37/index.d.ts"
+    ]
   },
   "lock": false,
   "tasks": {
     "build": "deno task lume",
     "serve": "deno task lume -s",
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "deploy": "deno task build && rsync -r _site/ 'oscarotero@oscarotero.com:~/www/deno'"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.19.3/"
+    "lume/": "https://deno.land/x/lume@v2.0.3/"
   }
 }

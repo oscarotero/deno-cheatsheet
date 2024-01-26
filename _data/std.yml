@@ -7,6 +7,9 @@
 - title: Bytes
   url: /bytes/mod.ts
   description: Provides helper functions to manipulate Uint8Array byte slices that are not included on the Uint8Array prototype.
+- title: CLI
+  url: /cli/mod.ts
+  description: Tools for creating interactive command line tools.
 - title: Collections
   url: /collections/mod.ts
   description: Functions for specific common tasks around collection types like Array and Record.
@@ -21,6 +24,9 @@
   url: /datetime/mod.ts
   browser: true
   description: Utilities for dealing with Date objects.
+- title: Data structures
+  url: /data_structures/mod.ts
+  description: This module exports classes that implements [data structure](https://en.wikipedia.org/wiki/Data_structure) algorithms.
 - title: Dotenv
   url: /dotenv/mod.ts
   description: Load environment variables from .env files.
@@ -54,6 +60,9 @@
 - title: Encoding/varint
   url: /encoding/varint.ts
   description: Functions for encoding typed integers in array buffers.
+- title: Expect
+  url: /expect/mod.ts
+  description: This module provides jest compatible expect assertion functionality.
 - title: Flags
   url: /flags/mod.ts
   browser: true
@@ -68,7 +77,7 @@
   description: String formatters and utilities for dealing with ANSI color codes.
 - title: Fmt/printf
   url: /fmt/printf.ts
-  description: Sprintf and printf} for printing formatted strings to stdout.
+  description: Sprintf and printf for printing formatted strings to stdout.
 - title: Front matter
   url: /front_matter/mod.ts
   browser: true
@@ -82,9 +91,9 @@
 - title: HTTP
   url: /http/mod.ts
   description: Provides user-friendly serve on top of Deno's native HTTP server and other utilities for creating HTTP servers and clients.
-# - title: IO
-#   url: /io/mod.ts
-#   description: Utilities for working with Deno's readers, writers, and web streams. 
+- title: Ini
+  url: /ini/mod.ts
+  description: parse and stringify for handling INI encoded data, such as the Desktop Entry specification.
 - title: JSON
   url: /json/mod.ts
   description: Functions for parsing and stringify JSON data. 
@@ -97,6 +106,9 @@
 - title: Media types
   url: /media_types/mod.ts
   description: Utility functions for media types (MIME types).
+- title: Net
+  url: /net/mod.ts
+  description: Network utilities.
 - title: Path
   url: /path/mod.ts
   browser: true
@@ -132,6 +144,9 @@
   url: /testing/time.ts
   browser: true
   description: Utilities for mocking time while testing.
+- title: Text
+  url: /text/mod.ts
+  description: This module exports utility functions for comparing/sorting/choosing texts with certain criteria.
 - title: TOML
   browser: true
   url: /toml/mod.ts
@@ -152,3 +167,7 @@
   browser: true
   url: /yaml/mod.ts
   description: Parse and stringify for handling YAML encoded data.
+- title: Web GPU
+  browser: false
+  url: /webgpu/mod.ts
+  description: Utilities for interacting with the [WebGPU API](https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API).

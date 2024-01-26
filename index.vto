@@ -12,26 +12,26 @@
   <h1 class="main-title">
     <img src="deno-logo.svg" width="50" height="50" alt="Deno Logo" class="logo">
     <span>Deno cheat sheet</span>
-    <small>v1.38</small>
+    <small>v1.40</small>
   </h1>
 
   <section class="section">
     <div class="section-tools">
-      {% for tool in tools %}
+      {{ for tool of tools }}
       <section class="section-tool">
         <h3 class="section-subtitle">
           <span class="section-tool-img">{{ tool.emoji }}</span>
           <a href="{{ tool.manual }}" data-modal>
             {{ tool.title }}
           </a>
-          {% if not tool.stable %}
+          {{ if !tool.stable }}
             &nbsp;
             <span class="badge">unstable</span>
-          {% endif %}
+          {{ /if }}
         </h3>
-        {{ comp.deno.tool(tool) | safe }}
+        {{ comp.deno.tool(tool) }}
       </section>
-      {% endfor %}
+      {{ /for }}
     </div>
   </section>
 
@@ -41,19 +41,19 @@
     </header>
 
     <div class="section-content">
-      {% for section in deno %}
+      {{ for section of deno }}
       <section class="section-subsection">
         <h3 class="section-subtitle">{{ section.title }}</h3>
 
         <ul class="section-items">
-        {% for item in section.content | sort(false, false, "name") %}
+        {{ for item of section.content.sort((a, b) => a.name.localeCompare(b.name)) }}
           <li>
-            {{ comp.deno.api(item) | safe }}
+            {{ comp.deno.api(item) }}
           </li>
-        {% endfor %}
+        {{ /for }}
         </ul>
       </section>
-      {% endfor %}
+      {{ /for }}
     </div>
   </section>
 
@@ -63,19 +63,19 @@
     </header>
 
     <div class="section-content">
-      {% for section in web %}
+      {{ for section of web }}
       <section class="section-subsection">
         <h3 class="section-subtitle">{{ section.title }}</h3>
 
         <ul class="section-items">
-        {% for item in section.content | sort(false, false, "name") %}
+        {{ for item of section.content.sort((a, b) => a.name.localeCompare(b.name)) }}
           <li>
-            {{ comp.deno.api(item) | safe }}
+            {{ comp.deno.api(item) }}
           </li>
-        {% endfor %}
+        {{ /for }}
         </ul>
       </section>
-      {% endfor %}
+      {{ /for }}
     </div>
   </section>
 
@@ -85,20 +85,20 @@
     </header>
 
     <div class="section-content">
-      {% for section in std %}
+      {{ for section of std }}
       <section class="section-subsection">
         <h3 class="section-subtitle">
           <a href="https://deno.land/std{{ section.url }}">
             {{ section.title }}
           </a>
 
-          {% if section.browser %}
+          {{ if section.browser }}
           &nbsp; <span class="badge is-browser">Browser</badger>
-          {% endif %}
+          {{ /if }}
         </h3>
-        {{ section.description | md | safe }}
+        {{ section.description |> md }}
       </section>
-      {% endfor %}
+      {{ /for }}
     </div>
   </section>
 

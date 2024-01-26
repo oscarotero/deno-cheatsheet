@@ -2,6 +2,7 @@
   content:
     - name: window
       stable: true
+      deprecated: true
       type: variable
       mdn: /Web/API/Window/window
       contains: 
@@ -184,6 +185,36 @@
       contains:
         name: Performance
         mdn: /Web/API/Performance
+
+- title: Temporal
+  content:
+    - name: Temporal.Calendar
+      stable: false
+      type: class
+    - name: Temporal.Duration
+      stable: false
+      type: class
+    - name: Temporal.Instant
+      stable: false
+      type: class
+    - name: Temporal.PlainDate
+      stable: false
+      type: class
+    - name: Temporal.PlainDateTime
+      stable: false
+      type: class
+    - name: Temporal.PlainMonthDay
+      stable: false
+      type: class
+    - name: Temporal.PlainTime
+      stable: false
+      type: class
+    - name: Temporal.TimeZone
+      stable: false
+      type: class
+    - name: Temporal.ZonedDateTime
+      stable: false
+      type: class
 
 - title: Storage
   content:
@@ -431,7 +462,7 @@
       type: function
       mdn: /Web/API/atob
 
-- title: BroadcastChannel
+- title: Broadcast Channel
   content:
     - name: BroadcastChannel
       stable: true
@@ -439,12 +470,19 @@
       type: class
       mdn: /Web/API/BroadcastChannel
 
-- title: structuredClone
+- title: Structured Clone
   content:
     - name: structuredClone
       stable: true
       type: function
       mdn: /Web/API/structuredClone
+
+- title: Image Data
+  content:
+    - name: ImageData
+      stable: true
+      type: class
+      mdn: /Web/API/ImageData
 
 - title: WebAssembly
   content:
@@ -500,3 +538,99 @@
       type: function
       stable: true
       mdn: /Web/JavaScript/Reference/Global_Objects/WebAssembly/validate
+
+- title: WebGPU
+  content:
+    - name: GPU
+      type: class
+      stable: true
+    - name: GPUAdapter
+      type: class
+      stable: true
+    - name: GPUAdapterInfo
+      type: class
+      stable: true
+    - name: GPUBindGroup
+      type: class
+      stable: true
+    - name: GPUBindGroupLayout
+      type: class
+      stable: true
+    - name: GPUBuffer
+      type: class
+      stable: true
+    - name: GPUBufferUsage
+      type: class
+      stable: true
+    - name: GPUColorWrite
+      type: class
+      stable: true
+    - name: GPUCommandBuffer
+      type: class
+      stable: true
+    - name: GPUCommandEncoder
+      type: class
+      stable: true
+    - name: GPUComputePassEncoder
+      type: class
+      stable: true
+    - name: GPUComputePipeline
+      type: class
+      stable: true
+    - name: GPUDevice
+      type: class
+      stable: true
+    - name: GPUMapMode
+      type: class
+      stable: true
+    - name: GPUOutOfMemoryError
+      type: class
+      stable: true
+    - name: GPUPipelineLayout
+      type: class
+      stable: true
+    - name: GPUQuerySet
+      type: class
+      stable: true
+    - name: GPUQueue
+      type: class
+      stable: true
+    - name: GPURenderBundle
+      type: class
+      stable: true
+    - name: GPURenderBundleEncoder
+      type: class
+      stable: true
+    - name: GPURenderPassEncoder
+      type: class
+      stable: true
+    - name: GPURenderPipeline
+      type: class
+      stable: true
+    - name: GPUSampler
+      type: class
+      stable: true
+    - name: GPUShaderModule
+      type: class
+      stable: true
+    - name: GPUShaderStage
+      type: class
+      stable: true
+    - name: GPUSupportedFeatures
+      type: class
+      stable: true
+    - name: GPUSupportedLimits
+      type: class
+      stable: true
+    - name: GPUTexture
+      type: class
+      stable: true
+    - name: GPUTextureUsage
+      type: class
+      stable: true
+    - name: GPUTextureView
+      type: class
+      stable: true
+    - name: GPUValidationError
+      type: class
+      stable: true
